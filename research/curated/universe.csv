@@ -1,0 +1,215 @@
+ticker,name,role,subrole,tier,basis
+NVDA,Nvidia,compute,accelerators,primary,Data-center accelerators are the majority of revenue per 10-K segment data
+AMD,Advanced Micro Devices,compute,accelerators,primary,Data Center segment incl. AI GPUs is largest segment; OpenAI supply agreement
+AVGO,Broadcom,compute,accelerators,primary,Discloses AI semiconductor revenue (custom accelerators and networking)
+MRVL,Marvell Technology,compute,accelerators,primary,Data-center end market incl. custom AI silicon is majority of revenue
+MU,Micron Technology,compute,memory,primary,High-bandwidth memory and data-center DRAM named as principal growth driver
+WDC,Western Digital,compute,memory,secondary,Cloud end market is majority of HDD revenue
+STX,Seagate Technology,compute,memory,secondary,Mass-capacity cloud storage is majority of revenue
+SNDK,Sandisk,compute,memory,secondary,NAND supplier with data-center exposure
+INTC,Intel,compute,accelerators,secondary,Data-center CPUs and foundry; Nvidia equity investment
+QCOM,Qualcomm,compute,accelerators,secondary,Announced data-center AI accelerators; core revenue is handsets
+TSM,Taiwan Semiconductor (ADR),compute,fabrication,primary,HPC platform incl. AI accelerators is majority of revenue
+ASML,ASML Holding (NY shares),compute,equipment,primary,Sole EUV supplier for leading-edge logic and memory
+AMAT,Applied Materials,compute,equipment,primary,Wafer-fab equipment for leading-edge logic and DRAM/HBM
+LRCX,Lam Research,compute,equipment,primary,Wafer-fab equipment; memory and advanced packaging
+KLAC,KLA,compute,equipment,primary,Process-control equipment for leading-edge fabs
+TER,Teradyne,compute,equipment,secondary,Test equipment for AI accelerators and memory
+ONTO,Onto Innovation,compute,equipment,secondary,Advanced-packaging inspection
+AMKR,Amkor Technology,compute,equipment,secondary,Outsourced advanced packaging
+ENTG,Entegris,compute,equipment,secondary,Semiconductor materials
+ARM,Arm Holdings (ADR),compute,design,primary,CPU IP for data-center and custom AI silicon
+SNPS,Synopsys,compute,design,secondary,EDA software used for AI chip design
+CDNS,Cadence Design Systems,compute,design,secondary,EDA software used for AI chip design
+ANET,Arista Networks,compute,networking,primary,Cloud/AI titans (Microsoft and Meta) are >10% customers
+CRDO,Credo Technology,compute,networking,primary,Active electrical cables for AI clusters; hyperscaler concentration
+ALAB,Astera Labs,compute,networking,primary,Connectivity silicon for AI servers
+COHR,Coherent,compute,networking,primary,Datacom optical transceivers
+LITE,Lumentum,compute,networking,primary,Optical components for cloud/AI
+CIEN,Ciena,compute,networking,secondary,Optical networking with cloud-provider demand
+MPWR,Monolithic Power Systems,compute,networking,secondary,Power management for AI servers
+APH,Amphenol,compute,networking,secondary,IT datacom interconnect is largest growth market
+GLW,Corning,compute,networking,secondary,Optical fiber for data centers
+FN,Fabrinet,compute,networking,secondary,Optical contract manufacturing incl. Nvidia
+CLS,Celestica,compute,servers,primary,Hyperscaler networking and compute hardware
+DELL,Dell Technologies,compute,servers,primary,AI-optimized server backlog disclosed
+SMCI,Super Micro Computer,compute,servers,primary,AI GPU servers are majority of revenue
+HPE,Hewlett Packard Enterprise,compute,servers,secondary,AI systems backlog disclosed
+CSCO,Cisco Systems,compute,networking,secondary,Discloses AI infrastructure orders from webscale customers
+MSFT,Microsoft,infrastructure,hyperscaler,primary,Azure; largest disclosed AI capex; OpenAI stake
+GOOGL,Alphabet (Class A),infrastructure,hyperscaler,primary,Google Cloud; Gemini; AI capex
+AMZN,Amazon,infrastructure,hyperscaler,primary,AWS; Anthropic stake; AI capex
+META,Meta Platforms,infrastructure,hyperscaler,primary,AI capex for internal use; superintelligence labs
+ORCL,Oracle,infrastructure,hyperscaler,primary,OCI; OpenAI contract dominates remaining performance obligations
+CRWV,CoreWeave,infrastructure,neocloud,primary,GPU cloud; revenue almost entirely AI compute
+NBIS,Nebius Group,infrastructure,neocloud,primary,GPU cloud; Microsoft and Meta contracts
+IREN,IREN,infrastructure,neocloud,primary,AI cloud contract with Microsoft
+APLD,Applied Digital,infrastructure,neocloud,primary,AI data-center leases to CoreWeave
+CIFR,Cipher Mining,infrastructure,neocloud,primary,HPC hosting leases (Fluidstack/Google backstop; AWS)
+WULF,TeraWulf,infrastructure,neocloud,primary,HPC hosting leases (Fluidstack/Google backstop)
+CORZ,Core Scientific,infrastructure,neocloud,primary,HPC hosting for CoreWeave
+GLXY,Galaxy Digital,infrastructure,neocloud,secondary,Helios campus leased to CoreWeave
+HUT,Hut 8,infrastructure,neocloud,secondary,AI data-center development
+RIOT,Riot Platforms,infrastructure,neocloud,secondary,Converting power capacity to AI/HPC
+BTDR,Bitdeer Technologies,infrastructure,neocloud,secondary,Converting power capacity to AI/HPC
+EQIX,Equinix,infrastructure,datacenter_reit,secondary,Data-center REIT; xScale hyperscale JV
+DLR,Digital Realty,infrastructure,datacenter_reit,secondary,Data-center REIT; AI share of bookings disclosed
+IRM,Iron Mountain,infrastructure,datacenter_reit,secondary,Growing data-center segment
+CEG,Constellation Energy,energy,generation,primary,Nuclear PPAs with Microsoft and Meta
+VST,Vistra,energy,generation,primary,Merchant generator with data-center contracts
+TLN,Talen Energy,energy,generation,primary,Amazon PPA for Susquehanna
+NRG,NRG Energy,energy,generation,secondary,Merchant generator; data-center agreements
+NEE,NextEra Energy,energy,generation,secondary,Google agreement to restart Duane Arnold
+OKLO,Oklo,energy,nuclear_dev,primary,Pre-revenue advanced nuclear aimed at data centers
+SMR,NuScale Power,energy,nuclear_dev,primary,Small modular reactors aimed at data centers
+CCJ,Cameco,energy,nuclear_dev,secondary,Uranium and Westinghouse stake
+LEU,Centrus Energy,energy,nuclear_dev,secondary,Enrichment for advanced reactors
+GEV,GE Vernova,energy,grid_equipment,primary,Gas-turbine backlog attributed to data-center demand
+BE,Bloom Energy,energy,grid_equipment,primary,Fuel cells for data centers (Oracle; Brookfield; AEP)
+ETN,Eaton,energy,grid_equipment,primary,Data-center orders disclosed as largest growth end market
+VRT,Vertiv,energy,cooling,primary,Data-center power and cooling is majority of revenue
+HUBB,Hubbell,energy,grid_equipment,secondary,Grid components
+POWL,Powell Industries,energy,grid_equipment,secondary,Switchgear with data-center orders
+NVT,nVent Electric,energy,cooling,secondary,Liquid cooling and data-center power
+MOD,Modine Manufacturing,energy,cooling,secondary,Data-center cooling
+TT,Trane Technologies,energy,cooling,secondary,Data-center chillers
+JCI,Johnson Controls,energy,cooling,secondary,Data-center cooling
+AAON,AAON,energy,cooling,secondary,BASX data-center cooling
+PWR,Quanta Services,energy,construction,secondary,Grid and data-center electrical construction
+EME,EMCOR Group,energy,construction,secondary,Data-center electrical/mechanical construction
+FIX,Comfort Systems USA,energy,construction,secondary,Data-center mechanical construction
+MTZ,MasTec,energy,construction,secondary,Power and data-center infrastructure
+STRL,Sterling Infrastructure,energy,construction,secondary,Data-center site development
+IESC,IES Holdings,energy,construction,secondary,Data-center electrical
+PRIM,Primoris Services,energy,construction,secondary,Power and data-center construction
+CAT,Caterpillar,energy,grid_equipment,secondary,Gensets and turbines for data centers
+CMI,Cummins,energy,grid_equipment,secondary,Backup power for data centers
+SO,Southern Company,energy,utility,secondary,Regulated utility with large data-center load pipeline
+DUK,Duke Energy,energy,utility,secondary,Regulated utility with data-center load pipeline
+D,Dominion Energy,energy,utility,secondary,Serves Northern Virginia data-center market
+AEP,American Electric Power,energy,utility,secondary,Data-center load commitments
+ETR,Entergy,energy,utility,secondary,Serves Meta Hyperion site
+XEL,Xcel Energy,energy,utility,secondary,Data-center load pipeline
+PPL,PPL Corporation,energy,utility,secondary,Data-center load pipeline; Blackstone JV
+PEG,Public Service Enterprise Group,energy,utility,secondary,Nuclear fleet; data-center talks
+ANT,Anthropic,models_apps,model_developer,limited_history,Model developer; listed 2026-11-19
+PLTR,Palantir Technologies,models_apps,ai_application,primary,AIP platform is stated growth driver
+AI,C3.ai,models_apps,ai_application,primary,Enterprise AI applications
+SOUN,SoundHound AI,models_apps,ai_application,primary,Voice AI
+BBAI,BigBear.ai,models_apps,ai_application,primary,AI decision software
+TEM,Tempus AI,models_apps,ai_application,primary,AI diagnostics
+PATH,UiPath,models_apps,ai_application,primary,Agentic automation
+APP,AppLovin,models_apps,ai_application,primary,AI ad engine (Axon) drives revenue
+SNOW,Snowflake,models_apps,enterprise_software,secondary,AI data cloud; model-provider partnerships
+MDB,MongoDB,models_apps,enterprise_software,secondary,Database for AI apps
+DDOG,Datadog,models_apps,enterprise_software,secondary,AI-native customers disclosed as revenue share
+CRM,Salesforce,models_apps,enterprise_software,secondary,Agentforce
+NOW,ServiceNow,models_apps,enterprise_software,secondary,Now Assist
+ADBE,Adobe,models_apps,enterprise_software,secondary,Firefly generative AI
+WDAY,Workday,models_apps,enterprise_software,secondary,AI agents
+INTU,Intuit,models_apps,enterprise_software,secondary,AI assistants; OpenAI contract
+IBM,IBM,models_apps,enterprise_software,secondary,Generative AI book of business disclosed
+TEAM,Atlassian,models_apps,enterprise_software,secondary,Rovo AI
+HUBS,HubSpot,models_apps,enterprise_software,secondary,AI agents
+ADSK,Autodesk,models_apps,enterprise_software,secondary,AI design tools
+GTLB,GitLab,models_apps,enterprise_software,secondary,AI coding
+DUOL,Duolingo,models_apps,enterprise_software,secondary,AI-generated content
+NET,Cloudflare,models_apps,enterprise_software,secondary,Inference at edge
+CRWD,CrowdStrike,models_apps,enterprise_software,secondary,AI security
+PANW,Palo Alto Networks,models_apps,enterprise_software,secondary,AI security
+ZS,Zscaler,models_apps,enterprise_software,secondary,AI security
+TWLO,Twilio,models_apps,enterprise_software,secondary,AI voice agents
+DOCU,Docusign,models_apps,enterprise_software,secondary,AI agreement management
+U,Unity Software,models_apps,enterprise_software,secondary,AI ad model
+AAPL,Apple,models_apps,consumer_platform,secondary,Buyer of third-party models; limited AI capex
+TSLA,Tesla,models_apps,consumer_platform,secondary,AI training capex; xAI ties
+OWL,Blue Owl Capital,capital,alt_manager,primary,Financing partner for Meta Hyperion and Oracle sites
+BX,Blackstone,capital,alt_manager,primary,Owner of QTS; largest data-center investor
+KKR,KKR,capital,alt_manager,secondary,Data-center and power funds
+APO,Apollo Global Management,capital,alt_manager,secondary,AI chip and data-center financings
+ARES,Ares Management,capital,alt_manager,secondary,Data-center development (Ada)
+BAM,Brookfield Asset Management,capital,alt_manager,primary,AI infrastructure program
+CG,Carlyle Group,capital,alt_manager,secondary,Private credit
+TPG,TPG,capital,alt_manager,secondary,Data-center investments
+DBRG,DigitalBridge,capital,alt_manager,primary,Digital-infrastructure manager (Vantage; Switch)
+ARCC,Ares Capital,capital,bdc,secondary,Private-credit lender
+OBDC,Blue Owl Capital Corp,capital,bdc,secondary,Private-credit lender
+FSK,FS KKR Capital,capital,bdc,secondary,Private-credit lender
+BXSL,Blackstone Secured Lending,capital,bdc,secondary,Private-credit lender
+JPM,JPMorgan Chase,capital,bank,secondary,Lead arranger on AI data-center loans
+GS,Goldman Sachs,capital,bank,secondary,Arranger on AI financings
+MS,Morgan Stanley,capital,bank,secondary,Arranger on Meta Hyperion and CoreWeave debt
+BAC,Bank of America,capital,bank,secondary,Arranger on AI financings
+C,Citigroup,capital,bank,secondary,Arranger on AI financings
+WFC,Wells Fargo,capital,bank,secondary,Arranger on AI financings
+SFTBY,SoftBank Group (ADR),capital,investor,primary,OpenAI and Stargate investor
+TXN,Texas Instruments,control_tech,analog_semis,control,Analog; industrial/auto majority
+ADI,Analog Devices,control_tech,analog_semis,control,Analog; industrial/auto majority
+MCHP,Microchip Technology,control_tech,analog_semis,control,Microcontrollers
+ON,ON Semiconductor,control_tech,analog_semis,control,Auto/industrial power
+NXPI,NXP Semiconductors,control_tech,analog_semis,control,Auto majority
+ACN,Accenture,control_tech,it_services,control,IT services
+ADP,Automatic Data Processing,control_tech,it_services,control,Payroll processing
+PAYX,Paychex,control_tech,it_services,control,Payroll processing
+V,Visa,control_tech,payments,control,Payments network
+MA,Mastercard,control_tech,payments,control,Payments network
+VRSN,VeriSign,control_tech,internet,control,Domain registry
+GDDY,GoDaddy,control_tech,internet,control,Domains and hosting
+EA,Electronic Arts,control_tech,media,control,Video games
+TTWO,Take-Two Interactive,control_tech,media,control,Video games
+NFLX,Netflix,control_tech,media,control,Streaming
+ROP,Roper Technologies,control_tech,software,control,Vertical software
+CDW,CDW,control_tech,it_services,control,IT reseller
+GRMN,Garmin,control_tech,hardware,control,Consumer devices
+MSI,Motorola Solutions,control_tech,hardware,control,Public-safety communications
+T,AT&T,control_tech,telecom,control,Telecom
+VZ,Verizon,control_tech,telecom,control,Telecom
+TMUS,T-Mobile US,control_tech,telecom,control,Telecom
+CMCSA,Comcast,control_tech,media,control,Cable and media
+DIS,Walt Disney,control_tech,media,control,Media
+JNJ,Johnson & Johnson,control_other,health,control,Health care
+LLY,Eli Lilly,control_other,health,control,Health care
+MRK,Merck,control_other,health,control,Health care
+ABBV,AbbVie,control_other,health,control,Health care
+UNH,UnitedHealth Group,control_other,health,control,Health care
+AMGN,Amgen,control_other,health,control,Health care
+TMO,Thermo Fisher Scientific,control_other,health,control,Health care
+ABT,Abbott Laboratories,control_other,health,control,Health care
+PG,Procter & Gamble,control_other,staples,control,Consumer staples
+KO,Coca-Cola,control_other,staples,control,Consumer staples
+PEP,PepsiCo,control_other,staples,control,Consumer staples
+WMT,Walmart,control_other,staples,control,Consumer staples
+COST,Costco,control_other,staples,control,Consumer staples
+PM,Philip Morris International,control_other,staples,control,Consumer staples
+MDLZ,Mondelez,control_other,staples,control,Consumer staples
+CL,Colgate-Palmolive,control_other,staples,control,Consumer staples
+HD,Home Depot,control_other,discretionary,control,Consumer discretionary
+MCD,McDonald's,control_other,discretionary,control,Consumer discretionary
+NKE,Nike,control_other,discretionary,control,Consumer discretionary
+SBUX,Starbucks,control_other,discretionary,control,Consumer discretionary
+LOW,Lowe's,control_other,discretionary,control,Consumer discretionary
+TJX,TJX Companies,control_other,discretionary,control,Consumer discretionary
+XOM,Exxon Mobil,control_other,oil_gas,control,Oil and gas
+CVX,Chevron,control_other,oil_gas,control,Oil and gas
+COP,ConocoPhillips,control_other,oil_gas,control,Oil and gas
+BRK-B,Berkshire Hathaway (Class B),control_other,financials,control,Insurance conglomerate
+PGR,Progressive,control_other,financials,control,Insurance
+CB,Chubb,control_other,financials,control,Insurance
+SPGI,S&P Global,control_other,financials,control,Financial data
+CME,CME Group,control_other,financials,control,Exchange
+ICE,Intercontinental Exchange,control_other,financials,control,Exchange
+UNP,Union Pacific,control_other,industrials,control,Railroad
+UPS,United Parcel Service,control_other,industrials,control,Logistics
+HON,Honeywell,control_other,industrials,control,Industrial conglomerate
+LMT,Lockheed Martin,control_other,industrials,control,Defense
+RTX,RTX,control_other,industrials,control,Aerospace and defense
+GD,General Dynamics,control_other,industrials,control,Defense
+DE,Deere,control_other,industrials,control,Machinery
+BA,Boeing,control_other,industrials,control,Aerospace
+WM,Waste Management,control_other,industrials,control,Waste services
+CSX,CSX,control_other,industrials,control,Railroad
+LIN,Linde,control_other,materials,control,Industrial gases
+SHW,Sherwin-Williams,control_other,materials,control,Coatings
+PLD,Prologis,control_other,real_estate,control,Logistics REIT
+AMT,American Tower,control_other,real_estate,control,Tower REIT
+O,Realty Income,control_other,real_estate,control,Net-lease REIT

@@ -16,7 +16,7 @@ async function open(page: Page, path = "") {
 async function toStep(page: Page, id: string) {
   await page.evaluate((sid) => {
     const els = [...document.querySelectorAll<HTMLElement>(`[data-step="${sid}"]`)]; const el = els[els.length - 1]; const r = el.getBoundingClientRect();
-    window.scrollTo(0, window.scrollY + r.top + Math.min(r.height / 2, 400) - window.innerHeight / 2);
+    window.scrollTo({ top: window.scrollY + r.top + Math.min(r.height / 2, 400) - window.innerHeight / 2, behavior: "instant" });
   }, id);
   await page.waitForTimeout(700);
 }

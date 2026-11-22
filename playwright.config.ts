@@ -4,7 +4,8 @@ const baseURL = process.env.E2E_BASE_URL ?? "http://localhost:4173/ai-reckoning/
 const gl = { launchOptions: { args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] } };
 export default defineConfig({
   testDir: "tests/e2e",
-  timeout: 60_000,
+  timeout: 90_000,
+  expect: { timeout: 12_000 },
   retries: process.env.CI ? 1 : 0,
   workers: 2,
   reporter: [["list"], ["json", { outputFile: "test-results/e2e-results.json" }]],

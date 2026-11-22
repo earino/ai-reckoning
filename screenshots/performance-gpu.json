@@ -1,0 +1,65 @@
+{
+ "measured_utc": "2026-11-22T00:31:27.361Z",
+ "results": {
+  "desktop": {
+   "url": "https://earino.github.io/ai-reckoning/",
+   "time_to_headline_ms": 585,
+   "time_to_article_text_ms": 593,
+   "time_to_3d_canvas_ms": 875,
+   "fcp_ms": 748,
+   "lcp_ms": 748,
+   "cls": 0.0107,
+   "long_task_blocking_ms": 844,
+   "transferred_kb_content_length": 638,
+   "frames": {
+    "idle_repricing": {
+     "fps": 50,
+     "worstFrameMs": 183
+    },
+    "transition_to_network": {
+     "fps": 52,
+     "worstFrameMs": 300
+    },
+    "network_settled": {
+     "fps": 60,
+     "worstFrameMs": 17
+    },
+    "transition_to_landscape": {
+     "fps": 59,
+     "worstFrameMs": 50
+    }
+   },
+   "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Max, Unspecified Version)"
+  },
+  "mobile-4g-4xcpu": {
+   "url": "https://earino.github.io/ai-reckoning/",
+   "time_to_headline_ms": 925,
+   "time_to_article_text_ms": 1836,
+   "time_to_3d_canvas_ms": 1848,
+   "fcp_ms": 908,
+   "lcp_ms": 1464,
+   "cls": 0,
+   "long_task_blocking_ms": 228,
+   "transferred_kb_content_length": 638,
+   "frames": {
+    "idle_repricing": {
+     "fps": 58,
+     "worstFrameMs": 100
+    },
+    "transition_to_network": {
+     "fps": 54,
+     "worstFrameMs": 167
+    },
+    "network_settled": {
+     "fps": 60,
+     "worstFrameMs": 17
+    },
+    "transition_to_landscape": {
+     "fps": 60,
+     "worstFrameMs": 17
+    }
+   },
+   "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Max, Unspecified Version)"
+  }
+ }
+}

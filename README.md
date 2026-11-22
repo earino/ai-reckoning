@@ -5,6 +5,8 @@
 - Live site: <https://earino.github.io/ai-reckoning/>
 - Methods: [`methodology/methods.md`](methodology/methods.md) · Limitations: [`methodology/limitations.md`](methodology/limitations.md)
 - Findings: [`editorial/findings.md`](editorial/findings.md) · Research log: [`editorial/research-log.md`](editorial/research-log.md)
+- Tests, performance and live verification: [`editorial/quality-report.md`](editorial/quality-report.md) · Screenshots: [`screenshots/`](screenshots/)
+- The article as plain text: [`editorial/story.md`](editorial/story.md)
 
 This work was produced by an AI system (Claude) from a written brief ([`brief.md`](brief.md)). See [`editorial/about.md`](editorial/about.md) for authorship and a conflict-of-interest statement.
 

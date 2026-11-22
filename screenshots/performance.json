@@ -1,0 +1,65 @@
+{
+ "measured_utc": "2026-11-22T00:31:59.049Z",
+ "results": {
+  "desktop": {
+   "url": "https://earino.github.io/ai-reckoning/",
+   "time_to_headline_ms": 492,
+   "time_to_article_text_ms": 502,
+   "time_to_3d_canvas_ms": 784,
+   "fcp_ms": 432,
+   "lcp_ms": 1000,
+   "cls": 0.0261,
+   "long_task_blocking_ms": 2264,
+   "transferred_kb_content_length": 638,
+   "frames": {
+    "idle_repricing": {
+     "fps": 17,
+     "worstFrameMs": 783
+    },
+    "transition_to_network": {
+     "fps": 12,
+     "worstFrameMs": 817
+    },
+    "network_settled": {
+     "fps": 11,
+     "worstFrameMs": 117
+    },
+    "transition_to_landscape": {
+     "fps": 13,
+     "worstFrameMs": 450
+    }
+   },
+   "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "mobile-4g-4xcpu": {
+   "url": "https://earino.github.io/ai-reckoning/",
+   "time_to_headline_ms": 834,
+   "time_to_article_text_ms": 1739,
+   "time_to_3d_canvas_ms": 1746,
+   "fcp_ms": 1080,
+   "lcp_ms": 1548,
+   "cls": 0,
+   "long_task_blocking_ms": 2051,
+   "transferred_kb_content_length": 638,
+   "frames": {
+    "idle_repricing": {
+     "fps": 24,
+     "worstFrameMs": 550
+    },
+    "transition_to_network": {
+     "fps": 17,
+     "worstFrameMs": 417
+    },
+    "network_settled": {
+     "fps": 14,
+     "worstFrameMs": 100
+    },
+    "transition_to_landscape": {
+     "fps": 20,
+     "worstFrameMs": 383
+    }
+   },
+   "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (LLVM 10.0.0) (0x0000C0DE)), SwiftShader driver)"
+  }
+ }
+}

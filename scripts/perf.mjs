@@ -2,14 +2,15 @@
 import { chromium, devices } from "@playwright/test";
 import fs from "node:fs";
 const url = process.argv[2] ?? "http://localhost:4173/ai-reckoning/"; const out = process.argv[3] ?? "test-results/performance.json";
-const args = ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"];
+const gpu = process.env.PERF_GPU === "1"; // PERF_GPU=1 uses the machine's real GPU (new headless mode) instead of software GL
+const args = gpu ? ["--use-angle=metal", "--enable-gpu", "--ignore-gpu-blocklist"] : ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"];
 const profiles = {
   desktop: { ctx: { viewport: { width: 1440, height: 900 } }, net: null, cpu: 1 },
   "mobile-4g-4xcpu": { ctx: { ...devices["Pixel 7"] }, net: { offline: false, downloadThroughput: (9e6 / 8), uploadThroughput: (2e6 / 8), latency: 85 }, cpu: 4 },
 };
 const results = {};
 for (const [name, prof] of Object.entries(profiles)) {
-  const browser = await chromium.launch({ args }); const ctx = await browser.newContext(prof.ctx); const page = await ctx.newPage();
+  const browser = await chromium.launch({ args, ...(gpu ? { channel: "chromium", headless: true } : {}) }); const ctx = await browser.newContext(prof.ctx); const page = await ctx.newPage();
   const cdp = await ctx.newCDPSession(page);
   if (prof.net) await cdp.send("Network.emulateNetworkConditions", prof.net);
   if (prof.cpu > 1) await cdp.send("Emulation.setCPUThrottlingRate", { rate: prof.cpu });
@@ -32,7 +33,7 @@ for (const [name, prof] of Object.entries(profiles)) {
   const frames = Object.fromEntries([await fps("idle_repricing", () => to("peak")), await fps("transition_to_network", () => to("network")), await fps("network_settled", async () => {}), await fps("transition_to_landscape", () => to("landscape"))]);
   const m = await page.evaluate(() => window.__m);
   results[name] = { url, time_to_headline_ms: h1, time_to_article_text_ms: text, time_to_3d_canvas_ms: canvas, fcp_ms: fcp && Math.round(fcp), lcp_ms: Math.round(m.lcp), cls: Number(m.cls.toFixed(4)),
-    long_task_blocking_ms: Math.round(m.longTasks), transferred_kb_content_length: Math.round(bytes / 1024), frames, renderer: "headless Chromium, SwiftShader software GL (no GPU): frame rates are a lower bound" };
+    long_task_blocking_ms: Math.round(m.longTasks), transferred_kb_content_length: Math.round(bytes / 1024), frames, renderer: await page.evaluate(() => { const g = document.createElement("canvas").getContext("webgl2"); const e = g?.getExtension("WEBGL_debug_renderer_info"); return e ? g.getParameter(e.UNMASKED_RENDERER_WEBGL) : "unknown"; }) };
   await browser.close();
 }
 fs.mkdirSync("test-results", { recursive: true }); fs.writeFileSync(out, JSON.stringify({ measured_utc: new Date().toISOString(), results }, null, 1));

@@ -1,0 +1,100 @@
+{
+ "url": "https://earino.github.io/ai-reckoning/",
+ "checked_utc": "2026-11-22T00:28:21.114Z",
+ "checks": {
+  "http_200": {
+   "pass": true,
+   "detail": "200"
+  },
+  "expected_html": {
+   "pass": true,
+   "detail": ""
+  },
+  "css_js_paths": {
+   "pass": true,
+   "detail": "200 index-CTBOurHP.js; 200 rolldown-runtime-XKyaHtl9.js; 200 three-C8BvJ-uX.js; 200 index-C9K_gqsk.css"
+  },
+  "desktop_homepage": {
+   "pass": true,
+   "detail": ""
+  },
+  "desktop_chapter_transition": {
+   "pass": true,
+   "detail": "196 documented relationships between 101 entities"
+  },
+  "desktop_network_canvas": {
+   "pass": true,
+   "detail": ""
+  },
+  "desktop_interactive_selection": {
+   "pass": true,
+   "detail": "36 source links"
+  },
+  "desktop_no_horizontal_scroll": {
+   "pass": true,
+   "detail": ""
+  },
+  "desktop_methodology_link": {
+   "pass": true,
+   "detail": ""
+  },
+  "desktop_citations": {
+   "pass": true,
+   "detail": "511"
+  },
+  "desktop_deep_link": {
+   "pass": true,
+   "detail": ""
+  },
+  "desktop_no_console_errors": {
+   "pass": true,
+   "detail": ""
+  },
+  "desktop_no_missing_assets": {
+   "pass": true,
+   "detail": ""
+  },
+  "mobile_homepage": {
+   "pass": true,
+   "detail": ""
+  },
+  "mobile_chapter_transition": {
+   "pass": true,
+   "detail": "196 documented relationships between 101 entities"
+  },
+  "mobile_network_canvas": {
+   "pass": true,
+   "detail": ""
+  },
+  "mobile_interactive_selection": {
+   "pass": true,
+   "detail": "36 source links"
+  },
+  "mobile_no_horizontal_scroll": {
+   "pass": true,
+   "detail": ""
+  },
+  "mobile_methodology_link": {
+   "pass": true,
+   "detail": ""
+  },
+  "mobile_citations": {
+   "pass": true,
+   "detail": "511"
+  },
+  "mobile_deep_link": {
+   "pass": true,
+   "detail": ""
+  },
+  "mobile_no_console_errors": {
+   "pass": true,
+   "detail": ""
+  },
+  "mobile_no_missing_assets": {
+   "pass": true,
+   "detail": ""
+  }
+ },
+ "errors": [],
+ "all_pass": true
+}

@@ -2,7 +2,7 @@ import { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import type { DataBundle, ModelKey, Role, WindowKey } from "../data/types";
 import { AI_ROLES, DECLINE, EDGE_FAMILY, EDGE_TYPE_LABEL, FAMILY_COLOR, FAMILY_LABEL, GAIN, ROLE_COLOR, ROLE_LABEL, ROLE_SHORT, STATUS_LABEL } from "../data/roles";
 import { dateLong, dateShort, pct, usd } from "../data/format";
-import { AXES, BAND_ROLES, CAMERA, computeLayout, radiusFor, windowValue } from "../scenes/layouts";
+import { AXES, BAND_ROLES, cameraFor, computeLayout, radiusFor, windowValue } from "../scenes/layouts";
 import type { Entity, LayoutOpts, ViewKey } from "../scenes/layouts";
 import { hasWebGL, useCoarsePointer, useIsMobile, useReducedMotion } from "../accessibility/env";
 import { Findings, SlowdownProse, VerdictProse, chapters } from "./steps";
@@ -89,8 +89,10 @@ export default function Story({ d }: { d: DataBundle }) {
   const steps = useMemo(() => chs.flatMap((c) => c.steps), [chs]);
   const explorer: Step = useMemo(() => ({ id: "explore", chapter: "epilogue", view: "network", camera: "network", controls: "explorer", interactive: true, labels: ["priv:openai", "ANT", "NVDA"],
     hud: { title: "Explorer", kind: "documented", size: "Mark size: market value on 6 October" }, body: () => null }), []);
+  // the first screen: the same field of companies, drawn clear of the headline and without column labels
+  const hero: Step = useMemo(() => ({ ...steps[0], id: "hero", camera: mobile ? "field" : "hero", labels: [], body: () => null }), [steps, mobile]);
   const params = useMemo(() => new URLSearchParams(window.location.search), []);
-  const [activeId, setActiveId] = useState<string>(steps[0].id);
+  const [activeId, setActiveId] = useState<string>("hero");
   const [solid, setSolid] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(() => { const s = params.get("select"); return s && (d.byTicker.has(s) || d.nodeBy.has(s)) ? s : null; });
   const [ov, setOv] = useState<Override>(() => (params.get("view") && params.get("view")! in VIEW_LABEL ? { view: params.get("view") as ViewKey } : {}));
@@ -99,7 +101,7 @@ export default function Story({ d }: { d: DataBundle }) {
   const [roleFilter, setRoleFilter] = useState<Set<Role>>(new Set<Role>([...AI_ROLES, "control_tech", "control_other", "other"]));
   const [hudOpen, setHudOpen] = useState(!mobile);
   const [dockOpen, setDockOpen] = useState(!mobile);
-  const step = activeId === "explore" ? explorer : steps.find((s) => s.id === activeId) ?? steps[0];
+  const step = activeId === "explore" ? explorer : activeId === "hero" ? hero : steps.find((s) => s.id === activeId) ?? steps[0];
   const dates = d.prices.dates; const peakIdx = dates.indexOf(d.prices.peak_date); const lastIdx = dates.length - 1;
 
   // scroll engine: the step nearest the middle of the viewport is active; scrolling back restores its state
@@ -110,9 +112,11 @@ export default function Story({ d }: { d: DataBundle }) {
         const el = en.target as HTMLElement; setActiveId(el.dataset.step!); setSolid(el.dataset.solid === "1");
         const ch = el.closest("section[id]")?.id; if (ch && !window.location.hash.startsWith("#/")) history.replaceState(null, "", `${window.location.pathname}${window.location.search}#${ch}`);
       }
-    }, { rootMargin: "-45% 0px -45% 0px", threshold: 0 });
+      // wide screens: the step at the middle of the screen is active. Narrow screens: the scene has the top band,
+      // so a step becomes active when its card comes into the text area below the band.
+    }, { rootMargin: mobile ? "-84% 0px -11% 0px" : "-45% 0px -45% 0px", threshold: 0 });
     els.forEach((e) => io.observe(e)); return () => io.disconnect();
-  }, [chs]);
+  }, [chs, mobile]);
   // deep links: #chapter-id, ?select=TICKER, ?view=network (opens the explorer)
   useEffect(() => {
     const target = params.get("view") ? "epilogue" : window.location.hash.replace("#", "");
@@ -151,6 +155,7 @@ export default function Story({ d }: { d: DataBundle }) {
     return { types, statuses };
   }, [types, statuses, step.focus, ov.view]);
   const cameraKey = ov.view && ov.view !== step.view ? ({ field: "field", repricing: "repricingWide", layers: "layers", network: "network", landscape: "landscape", verdict: "verdict" } as const)[ov.view] : step.camera;
+  const camera = useMemo(() => cameraFor(cameraKey, mobile), [cameraKey, mobile]);
   const labels = ov.view && ov.view !== step.view ? [] : step.labels ?? [];
   const interactive = !!step.interactive && !coarse;
   const vd = d.n.vd[opts.window];
@@ -168,15 +173,15 @@ export default function Story({ d }: { d: DataBundle }) {
       <div className="stage" aria-hidden={solid}>
         {useFlat ? <div className="flat-stage"><FlatStage {...stageProps} />{!webgl && <p className="fallback-note">Your browser is not showing 3D graphics, so this is the flat version of each view. Nothing is missing: the same data, axes and selections are available.</p>}</div>
           : <Suspense fallback={<div className="stage-loading">Loading the 3D scene…</div>}>
-              <World entities={entities} edges={d.graph.edges} view={view} opts={opts} camera={CAMERA[cameraKey]} interactive={interactive} selectedId={selectedId} onSelect={setSelectedId} labels={labels} focus={focus}
-                colorMode={colorMode} edgeFilter={edgeFilter} roleFilter={roleFilter} reducedMotion={reducedMotion} mobile={mobile} paused={solid}
+              <World entities={entities} edges={d.graph.edges} view={view} opts={opts} camera={camera} interactive={interactive} selectedId={selectedId} onSelect={setSelectedId} labels={labels} focus={focus}
+                colorMode={colorMode} edgeFilter={edgeFilter} roleFilter={roleFilter} reducedMotion={reducedMotion} mobile={mobile} paused={solid} quiet={activeId === "hero" && !mobile}
                 dateLabel={dateLong(dates[opts.dateIndex])} marketReturn={vd?.market ?? null} fit={vd ? { intercept: vd.intercept, slope: vd.slope } : null} />
             </Suspense>}
       </div>
 
       {!solid && (
         <aside className={`hud ${hudOpen ? "open" : ""}`} aria-label="What you are looking at">
-          <button className="hud-toggle" aria-expanded={hudOpen} onClick={() => setHudOpen(!hudOpen)}>{hudOpen ? "Hide key" : "Key: what am I looking at?"}</button>
+          <button className="hud-toggle" aria-expanded={hudOpen} aria-label={hudOpen ? "Hide key" : "Key: what am I looking at?"} onClick={() => { setHudOpen(!hudOpen); if (mobile && !hudOpen) setDockOpen(false); }}>{hudOpen ? (mobile ? "Close key" : "Hide key") : mobile ? "Key" : "Key: what am I looking at?"}</button>
           {hudOpen && <div className="hud-body">
             <p className="hud-title">{controls === "explorer" ? VIEW_LABEL[view] : step.hud.title}{view === "repricing" && <> — <b>{dateLong(dates[opts.dateIndex])}</b></>}</p>
             <p><span className={`tag ${view === "landscape" || view === "verdict" ? (opts.model === "raw" ? "observed" : "modeled") : view === "network" || view === "layers" || view === "field" ? "documented" : "observed"}`}>
@@ -201,8 +206,9 @@ export default function Story({ d }: { d: DataBundle }) {
       )}
 
       {!solid && controls !== "none" && (
-        <details className="dock" open={dockOpen} onToggle={(e) => setDockOpen((e.target as HTMLDetailsElement).open)} aria-label="Graphic controls">
-          <summary>Controls</summary>
+        <details className="dock" open={dockOpen} onToggle={(e) => { const o = (e.target as HTMLDetailsElement).open; setDockOpen(o); if (o && mobile) setHudOpen(false); }} aria-label="Graphic controls">
+          <summary>{dockOpen && mobile ? "Close controls" : "Controls"}</summary>
+          <div className="dock-body">
           {controls === "explorer" && <fieldset><legend>View</legend>{(["repricing", "layers", "network", "landscape", "verdict"] as ViewKey[]).map((v) => <button key={v} aria-pressed={view === v} onClick={() => setOv({ ...ov, view: v })}>{VIEW_LABEL[v]}</button>)}</fieldset>}
           {showRepricing && <>
             <fieldset><legend>Date: {dateShort(dates[opts.dateIndex])}</legend>
@@ -226,13 +232,14 @@ export default function Story({ d }: { d: DataBundle }) {
             <datalist id="entity-list">{searchList.map((s) => <option key={s.id} value={s.label} />)}</datalist>
             {webgl && <button aria-pressed={!!ov.flat} onClick={() => setOv({ ...ov, flat: !ov.flat })}>{ov.flat ? "3D view" : "2D view"}</button>}
           </fieldset>
+          </div>
         </details>
       )}
 
       {selectedId && <CompanyPanel id={selectedId} d={d} onClose={() => setSelectedId(null)} />}
 
       <main className="scroll" id="main">
-        <header className="hero" data-step="field">
+        <header className="hero" data-step="hero">
           <p className="kicker">The AI Reckoning · an investigation in data</p>
           <h1>The crash followed the beta, not the bill</h1>
           <p className="dek">On 20 November 2026 about {usd(-d.n.mv.ai_day)} left AI-linked stocks in a day. The popular story is that investors finally saw the cost of the build-out. We followed the money through {d.n.graph.n_edges} sourced deals and tested that story on {d.n.n_companies} companies. How much each one lost tracked a number you could have measured in September — and we found no link to who was spending the most.</p>

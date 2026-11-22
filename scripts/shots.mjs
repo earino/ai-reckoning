@@ -15,7 +15,12 @@ await page.waitForTimeout(2500);
 const ids = await page.$$eval("[data-step]", (els) => els.map((e) => e.dataset.step));
 let i = 0;
 for (const id of ids) {
-  await page.evaluate((sid) => { const els = [...document.querySelectorAll(`[data-step="${sid}"]`)]; const el = els[els.length - 1]; const r = el.getBoundingClientRect(); window.scrollTo(0, window.scrollY + r.top + Math.min(r.height / 2, 500) - window.innerHeight / 2); }, id);
+  // narrow screens: a step is active when its card enters the text area below the scene band; then read it just below the band
+  for (const f of mode === "mobile" ? [0.86, 0.5] : [null]) {
+    await page.evaluate(([sid, frac]) => { const els = [...document.querySelectorAll(`[data-step="${sid}"]`)]; const el = els[els.length - 1]; const r = el.getBoundingClientRect();
+      window.scrollTo({ top: frac == null ? window.scrollY + r.top + Math.min(r.height / 2, 500) - window.innerHeight / 2 : sid === "hero" ? 0 : window.scrollY + r.top - window.innerHeight * frac, behavior: "instant" }); }, [id, f]);
+    await page.waitForTimeout(250);
+  }
   await page.waitForTimeout(id === "fall" ? 11000 : 3200);
   await page.screenshot({ path: `${out}/${mode}-${String(i++).padStart(2, "0")}-${id}.png` });
 }

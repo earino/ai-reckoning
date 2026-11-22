@@ -13,12 +13,18 @@ async function open(page: Page, path = "") {
   await page.goto(path, { waitUntil: "networkidle" });
   await page.waitForSelector("h1");
 }
+// Wide screens: the step at the middle of the screen is active. Narrow screens: a step becomes active when its card
+// enters the text area below the scene band, and the reader then reads it just below the band.
 async function toStep(page: Page, id: string) {
-  await page.evaluate((sid) => {
-    const els = [...document.querySelectorAll<HTMLElement>(`[data-step="${sid}"]`)]; const el = els[els.length - 1]; const r = el.getBoundingClientRect();
-    window.scrollTo({ top: window.scrollY + r.top + Math.min(r.height / 2, 400) - window.innerHeight / 2, behavior: "instant" });
-  }, id);
-  await page.waitForTimeout(700);
+  const narrow = (page.viewportSize()?.width ?? 1440) <= 820;
+  for (const frac of narrow ? [0.86, 0.5] : [null]) {
+    await page.evaluate(([sid, f]) => {
+      const els = [...document.querySelectorAll<HTMLElement>(`[data-step="${sid}"]`)]; const el = els[els.length - 1]; const r = el.getBoundingClientRect();
+      window.scrollTo({ top: f == null ? window.scrollY + r.top + Math.min(r.height / 2, 400) - window.innerHeight / 2 : window.scrollY + r.top - window.innerHeight * (f as number), behavior: "instant" });
+    }, [id, frac] as const);
+    await page.waitForTimeout(300);
+  }
+  await page.waitForTimeout(500);
 }
 const noHScroll = (page: Page) => page.evaluate(() => document.scrollingElement!.scrollWidth <= window.innerWidth + 1);
 
@@ -52,12 +58,13 @@ test("chapter transitions change the analytical state and scrolling back restore
 test("time controls: scrub the date, pause, and switch percent to dollars", async ({ page, isMobile }) => {
   await open(page);
   await toStep(page, "question");
-  if (isMobile) { await page.getByRole("button", { name: /Key: what am I/ }).click(); await page.locator(".dock > summary").click(); }
+  if (isMobile) await page.locator(".dock > summary").click();
   const slider = page.getByLabel("Select date");
   await slider.fill("10");
   await expect(page.locator(".dock")).toContainText(/Date: 14 Oct/);
   await page.getByRole("button", { name: "Dollar change" }).click();
-  await expect(page.locator(".hud")).toContainText("in dollars");
+  if (isMobile) { await page.getByRole("button", { name: /Key: what am I/ }).click(); await expect(page.locator(".hud")).toContainText("in dollars"); await page.locator(".dock > summary").click(); }
+  else   await expect(page.locator(".hud")).toContainText("in dollars");
   await page.getByRole("button", { name: /Play time animation/ }).click();
   await expect(page.getByRole("button", { name: /Pause time animation/ })).toBeVisible();
   await page.getByRole("button", { name: /Pause time animation/ }).click();
@@ -207,4 +214,61 @@ test("keyboard: skip link and focusable controls", async ({ page, isMobile }) =>
   await page.getByRole("button", { name: "Dollar change" }).focus();
   await page.keyboard.press("Enter");
   await expect(page.getByRole("button", { name: "Dollar change" })).toHaveAttribute("aria-pressed", "true");
+});
+
+test("first screen: nothing from the scene is drawn behind the introduction", async ({ page }) => {
+  await open(page);
+  await page.waitForTimeout(2500);
+  // hide the words, then look at what is left behind them
+  await page.addStyleTag({ content: ".hero .dek, .hero h1 { color: transparent !important; text-shadow: none !important; }" });
+  for (const sel of [".hero h1", ".hero .dek"]) {
+    const shot = (await page.locator(sel).screenshot()).toString("base64");
+    const maxDiff = await page.evaluate(async (b64) => {
+      const img = new Image(); img.src = `data:image/png;base64,${b64}`; await img.decode();
+      const c = document.createElement("canvas"); c.width = img.width; c.height = img.height; const g = c.getContext("2d")!; g.drawImage(img, 0, 0);
+      const px = g.getImageData(0, 0, c.width, c.height).data; let m = 0;
+      for (let i = 0; i < px.length; i += 4) m = Math.max(m, Math.abs(px[i] - 11), Math.abs(px[i + 1] - 12), Math.abs(px[i + 2] - 14));
+      return m;
+    }, shot);
+    expect(maxDiff, `${sel} background differs from the page background`).toBeLessThan(12);
+  }
+});
+
+test("narrow screens: scene band above, text below, no overlap", async ({ page, isMobile }) => {
+  test.skip(!isMobile, "narrow layout only");
+  await open(page);
+  await page.waitForTimeout(1500);
+  const vh = page.viewportSize()!.height, vw = page.viewportSize()!.width;
+  const band = (await page.locator(".stage").boundingBox())!;
+  expect(band.y + band.height).toBeLessThan(vh * 0.5);
+  await expect(page.locator(".hud-body")).toHaveCount(0); // the key is closed at load
+  expect((await page.locator(".hero h1").boundingBox())!.y).toBeGreaterThanOrEqual(band.y + band.height);
+  for (const id of ["field", "fall", "network", "landscape", "verdict"]) {
+    await toStep(page, id);
+    await page.waitForTimeout(1200);
+    const r = await page.evaluate((sid) => {
+      const card = document.querySelector<HTMLElement>(`[data-step="${sid}"] .card`)!.getBoundingClientRect();
+      const stage = document.querySelector(".stage")!.getBoundingClientRect();
+      const y = Math.max(card.top, stage.bottom) + 40;
+      const hit = document.elementFromPoint(window.innerWidth / 2, y);
+      const btns = [...document.querySelectorAll<HTMLElement>(".hud-toggle, .dock > summary")].map((b) => b.getBoundingClientRect().bottom);
+      const labels = [...document.querySelectorAll<HTMLElement>(".label-layer .axis-label.band")].filter((l) => l.style.visibility === "visible").map((l) => l.getBoundingClientRect());
+      return { cardOnTop: !!hit?.closest(`[data-step="${sid}"] .card`), stageBottom: stage.bottom, btns, labels: labels.map((l) => [l.left, l.right, l.top, l.bottom]) };
+    }, id);
+    expect(r.cardOnTop, `${id}: the card text is covered`).toBe(true);
+    for (const b of r.btns) expect(b, `${id}: a button is in the text area`).toBeLessThanOrEqual(r.stageBottom + 1);
+    if (id === "field" || id === "fall") expect(r.labels.length, `${id}: column labels in the band`).toBe(5);
+    for (const [l, rt, t, b] of r.labels) { expect(l).toBeGreaterThanOrEqual(-2); expect(rt).toBeLessThanOrEqual(vw + 2); expect(t).toBeGreaterThanOrEqual(band.y - 2); expect(b).toBeLessThanOrEqual(r.stageBottom + 2); }
+  }
+  expect(await noHScroll(page)).toBe(true);
+});
+
+test("narrow screens: the menu gives all site links", async ({ page, isMobile }) => {
+  test.skip(!isMobile, "narrow layout only");
+  await open(page);
+  await page.getByRole("button", { name: "Menu" }).click();
+  await expect(page.locator("#site-links a:visible")).toHaveCount(6);
+  await page.locator("#site-links a", { hasText: "Explore" }).click();
+  await expect(page.locator("#site-links a:visible")).toHaveCount(0);
+  await expect(page).toHaveURL(/#epilogue/);
 });

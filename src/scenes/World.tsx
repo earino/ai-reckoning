@@ -17,7 +17,7 @@ export interface EdgeFilter { types: Set<string>; statuses: Set<string> }
 export interface WorldProps {
   entities: Entity[]; edges: GEdge[]; view: ViewKey; opts: LayoutOpts; camera: CameraPreset; interactive: boolean;
   selectedId: string | null; onSelect: (id: string | null) => void; labels: string[]; focus: string[] | null;
-  colorMode: "role" | "return"; edgeFilter: EdgeFilter; roleFilter: Set<Role>; reducedMotion: boolean; mobile: boolean; paused: boolean;
+  colorMode: "role" | "return"; edgeFilter: EdgeFilter; roleFilter: Set<Role>; reducedMotion: boolean; mobile: boolean; paused: boolean; quiet?: boolean;
   marketReturn: number | null; fit: { intercept: number; slope: number } | null; dateLabel: string;
 }
 
@@ -38,15 +38,26 @@ function geometryFor(role: Role): THREE.BufferGeometry {
 
 function Rig({ preset, interactive, reducedMotion, mobile }: { preset: CameraPreset; interactive: boolean; reducedMotion: boolean; mobile: boolean }) {
   const { camera, size } = useThree();
-  useEffect(() => { // desktop: shift the picture right, clear of the text column; mobile: shift it up, clear of the card
-    const c = camera as THREE.PerspectiveCamera;
-    if (mobile) c.setViewOffset(size.width, size.height, 0, size.height * 0.16, size.width, size.height);
-    else c.setViewOffset(size.width, size.height, -size.width * 0.09, 0, size.width, size.height);
+  // Wide screens: shift the picture right, clear of the text column. Narrow screens: the scene has its own band,
+  // so there is no shift; the field of view widens to keep the same horizontal coverage in a near-square band.
+  const wantShift = (): [number, number] => (mobile ? [0, 0] : preset.shift ?? [0.09, 0]);
+  const shift = useRef<[number, number]>(wantShift());
+  const applyShift = () => {
+    const c = camera as THREE.PerspectiveCamera; const [sx, sy] = shift.current;
+    if (sx === 0 && sy === 0) c.clearViewOffset(); else c.setViewOffset(size.width, size.height, -size.width * sx, -size.height * sy, size.width, size.height);
     c.updateProjectionMatrix();
-  }, [camera, size, mobile]);
+  };
   const controls = useRef<any>(null);
   const goal = useRef({ pos: new THREE.Vector3(...preset.position), tgt: new THREE.Vector3(...preset.target), moving: true });
   const tgt = useRef(new THREE.Vector3(...preset.target));
+  useEffect(() => {
+    const c = camera as THREE.PerspectiveCamera;
+    const t = mobile ? Math.min(Math.tan((33 * Math.PI) / 180), Math.max(Math.tan((21 * Math.PI) / 180), 0.68 / (size.width / size.height))) : Math.tan((21 * Math.PI) / 180);
+    c.fov = (2 * Math.atan(t) * 180) / Math.PI;
+    if (mobile) shift.current = [0, 0];
+    applyShift(); goal.current.moving = true;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [camera, size, mobile]);
   useEffect(() => {
     goal.current.pos.set(...preset.position); goal.current.tgt.set(...preset.target); goal.current.moving = true;
   }, [preset]);
@@ -55,6 +66,9 @@ function Rig({ preset, interactive, reducedMotion, mobile }: { preset: CameraPre
     if (!g.moving) return;
     const k = reducedMotion ? 1 : Math.min(1, dt * 2.2);
     camera.position.lerp(g.pos, k); tgt.current.lerp(g.tgt, k);
+    const w = wantShift();
+    if (Math.abs(w[0] - shift.current[0]) + Math.abs(w[1] - shift.current[1]) > 0.0005) { shift.current = [shift.current[0] + (w[0] - shift.current[0]) * k, shift.current[1] + (w[1] - shift.current[1]) * k]; applyShift(); }
+    else if (shift.current[0] !== w[0] || shift.current[1] !== w[1]) { shift.current = w; applyShift(); }
     camera.lookAt(tgt.current);
     if (controls.current) { controls.current.target.copy(tgt.current); controls.current.update(); }
     if (camera.position.distanceTo(g.pos) < 0.02) g.moving = false;
@@ -229,7 +243,7 @@ function Edges({ entities, edges, shared, selectedId, edgeFilter, reducedMotion,
 
 
 /** Projects world positions to the DOM label layer each frame. Labels are ordinary HTML: crisp, selectable and cheap. */
-function Projector({ layer, shared }: { layer: React.RefObject<HTMLDivElement | null>; shared: React.MutableRefObject<Shared> }) {
+function Projector({ layer, shared, edge }: { layer: React.RefObject<HTMLDivElement | null>; shared: React.MutableRefObject<Shared>; edge: number }) {
   const { camera, size } = useThree();
   const v = useMemo(() => new THREE.Vector3(), []);
   useFrame(() => {
@@ -240,7 +254,7 @@ function Projector({ layer, shared }: { layer: React.RefObject<HTMLDivElement | 
       if (ei != null) { const i = Number(ei) * 3; v.set(cur[i], cur[i + 1] + Number(el.dataset.dy ?? 0), cur[i + 2]); }
       else { const [x, y, z] = el.dataset.wp!.split(",").map(Number); v.set(x, y, z); }
       v.project(camera);
-      const vis = v.z < 1 && Math.abs(v.x) < 1.15 && Math.abs(v.y) < 1.15;
+      const vis = v.z < 1 && Math.abs(v.x) < edge && Math.abs(v.y) < edge;
       el.style.visibility = vis ? "visible" : "hidden";
       if (vis) el.style.transform = `translate(-50%, -50%) translate(${((v.x + 1) / 2) * size.width}px, ${((1 - v.y) / 2) * size.height}px)`;
     }
@@ -276,10 +290,10 @@ export default function World(props: WorldProps) {
         {guides.plane && <mesh position={guides.plane.position} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={guides.plane.size} /><meshBasicMaterial color="#ece7dc" transparent opacity={0.035} side={THREE.DoubleSide} depthWrite={false} /></mesh>}
         <Marks {...props} shared={shared} onHover={setHover} />
         {view === "network" && <Edges key={view} {...props} shared={shared} />}
-        <Projector layer={layer} shared={shared} />
+        <Projector layer={layer} shared={shared} edge={mobile ? 0.97 : 1.15} />
       </Canvas>
-      <div className="label-layer" ref={layer} aria-hidden="true">
-        {guides.ticks.map((t, i) => <span key={`${view}-t${i}`} data-wp={t.p.join(",")} className={`axis-label ${t.cls ?? ""}`}>{t.swatch && <i style={{ background: t.swatch }} />}{t.text}</span>)}
+      <div className={`label-layer ${props.quiet ? "quiet" : ""}`} ref={layer} aria-hidden="true">
+        {guides.ticks.map((t, i) => <span key={`${view}-t${i}`} data-wp={t.p.join(",")} className={`axis-label ${t.cls ?? ""}`} style={t.color ? { color: t.color } : undefined}>{t.swatch && <i style={{ background: t.swatch }} />}{t.text}</span>)}
         {labelIdx.map((i) => <span key={entities[i].id} data-ei={i} data-dy={entities[i].radius + 0.34} className={`mark-label ${entities[i].id === selectedId ? "sel" : ""}`}>{entities[i].company?.ticker ?? entities[i].name.split(" (")[0]}</span>)}
         {hv && hp && hover != null && (
           <div className="tooltip" data-ei={hover} data-dy={-(hv.radius + 0.75)}>

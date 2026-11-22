@@ -12,7 +12,7 @@ function useRoute(): string {
 
 export default function App() {
   const [d, setD] = useState<DataBundle | null>(null); const [err, setErr] = useState<string | null>(null);
-  const route = useRoute();
+  const route = useRoute(); const [menu, setMenu] = useState(false);
   useEffect(() => { loadData().then(setD).catch((e) => setErr(String(e.message ?? e))); }, []);
   useEffect(() => { if (route) window.scrollTo(0, 0); document.title = route && DOC_PAGES[route] ? `${DOC_PAGES[route].title} — The AI Reckoning` : "The AI Reckoning — the crash followed the beta, not the bill"; }, [route]);
   return (
@@ -20,7 +20,8 @@ export default function App() {
       <a className="skip" href="#main">Skip to the article</a>
       <nav className="topnav" aria-label="Site">
         <a className="brand" href="#prologue" onClick={() => { if (route) window.location.hash = ""; }}>The AI Reckoning</a>
-        <div className="links">
+        <button className="menu-btn" aria-expanded={menu} aria-controls="site-links" onClick={() => setMenu(!menu)}>{menu ? "Close" : "Menu"}</button>
+        <div id="site-links" className={`links ${menu ? "open" : ""}`} onClick={() => setMenu(false)}>
           {!route && <><a href="#chapter-2">Network</a><a href="#observatory">Event study</a><a href="#chapter-5">Simulator</a><a href="#epilogue">Explore</a></>}
           {route && <a href="#prologue">← Story</a>}
           <a href="#/methodology">Methods</a><a href="#/sources">Sources</a>

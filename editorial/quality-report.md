@@ -8,7 +8,7 @@ Measured on 22 November 2026. Raw outputs are in `screenshots/` (`live-verificat
 |---|---|---|
 | Data and analysis | pytest (`tests/research`) | 26 passed |
 | Application logic | Vitest (`tests/unit`) | 13 passed |
-| Browser end-to-end, desktop and mobile emulation | Playwright (`tests/e2e`) | 25 passed, 1 skipped (hardware-keyboard test on mobile) |
+| Browser end-to-end, desktop and mobile emulation | Playwright (`tests/e2e`) | 29 passed, 3 skipped (hardware-keyboard test on mobile; two narrow-layout tests on desktop) |
 | Accessibility | axe-core in Playwright, WCAG 2.0/2.1/2.2 A and AA rules | 0 critical or serious violations on 6 page states, both sizes |
 | Static analysis | TypeScript strict mode | 0 errors |
 | Build checks | `scripts/check-data.mjs` | assets resolve, data headers complete, no local paths or credentials |
@@ -51,3 +51,11 @@ Frame rates:
 - The three.js bundle is 1.18 MB (323 KB compressed). It is preloaded but does not block the headline or text.
 - Four cited article links were dead at publication (see Limitations).
 - Contrast and target-size rules pass automated checks; some 3D axis labels are small on phones, where the 2D view is the recommended reading mode.
+
+## Layout revision, 22 November 2026 (after first publication)
+
+A reader review found two display defects. No data, analysis or text changed.
+
+- **First screen, wide displays.** The 3D scene was drawn behind the introduction and made it hard to read. The scene now sits beside the text, the text has an opaque side, and the column labels are hidden until the first scroll step. A test checks that nothing is drawn behind the headline and introduction.
+- **Narrow displays (820 px and less).** Text cards, the key and the controls were stacked on top of the scene. The scene now has a fixed band in the top 46% of the screen and the text scrolls below it on an opaque background. The key and the controls are closed at load and open as sheets over the text area. The camera uses a wider field of view and nearer positions for the near-square band. A menu gives all six site links. Tests check that the card text is not covered, that the buttons stay in the scene band, and that the column labels are inside the band.
+- Checked in emulation at 360, 390, 412 and 430 px wide and at 1440 px. A physical phone was not tested.

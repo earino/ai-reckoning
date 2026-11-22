@@ -119,16 +119,24 @@ export function computeLayout(view: ViewKey, entities: Entity[], opts: LayoutOpt
   });
 }
 
-export interface CameraPreset { position: [number, number, number]; target: [number, number, number] }
+/** shift: fraction of the screen that the picture moves right and down, to keep it clear of the text column (wide screens only). */
+export interface CameraPreset { position: [number, number, number]; target: [number, number, number]; shift?: [number, number]; near?: number }
 export const CAMERA: Record<string, CameraPreset> = {
-  field: { position: [0, 17, 22], target: [0, -0.5, 0] },
-  repricingWide: { position: [0, 3.5, 30], target: [0, -3.0, 0] },
-  repricingChips: { position: [9, 2.5, 21], target: [1.5, -3.0, 0] },
-  layers: { position: [17, 5, 18], target: [0, -0.6, 0] },
+  hero: { position: [0, 29, 37.5], target: [0, -0.5, 0], shift: [0.25, 0.1] },
+  field: { position: [0, 17, 22], target: [0, -0.5, 0], near: 0.86 },
+  repricingWide: { position: [0, 3.5, 30], target: [0, -3.0, 0], near: 0.86 },
+  repricingChips: { position: [9, 2.5, 21], target: [1.5, -3.0, 0], near: 0.85 },
+  layers: { position: [17, 5, 18], target: [0, -0.6, 0], near: 0.8 },
   network: { position: [11, 4.6, 15.5], target: [0, 0.2, 0] },
   networkTop: { position: [8, 6.2, 12.5], target: [0, 1.2, 0] },
   networkCredit: { position: [-12, 6.5, 10.5], target: [0, 2.2, 0] },
-  landscape: { position: [13, 5.5, 18], target: [0, -2.2, 1] },
-  landscapeFront: { position: [0, -1.2, 24], target: [0, -2.2, 0] },
-  verdict: { position: [1.2, -2.6, 23], target: [1.2, -2.8, 0] },
+  landscape: { position: [13, 5.5, 18], target: [0, -2.2, 1], near: 0.82 },
+  landscapeFront: { position: [0, -1.2, 24], target: [0, -2.2, 0], near: 0.92 },
+  verdict: { position: [1.2, -2.6, 23], target: [1.2, -2.8, 0], near: 0.7 },
 };
+/** Camera for a screen. On narrow screens the scene band is near-square, so some views move the camera nearer to fill it. */
+export function cameraFor(key: string, mobile: boolean): CameraPreset {
+  const c = CAMERA[key]; const f = mobile ? c.near ?? 1 : 1;
+  if (f === 1) return c;
+  return { ...c, position: [0, 1, 2].map((i) => c.target[i] + (c.position[i] - c.target[i]) * f) as [number, number, number] };
+}

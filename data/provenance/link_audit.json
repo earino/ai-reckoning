@@ -1,0 +1,404 @@
+{
+ "checked_utc": "2026-11-22T00:15:02+00:00",
+ "n": 512,
+ "counts": {
+  "not_found": 7,
+  "ok": 456,
+  "refuses_automated_clients": 41,
+  "error": 8
+ },
+ "not_ok": [
+  {
+   "id": "s0001",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/",
+   "result": 404,
+   "class": "not_found",
+   "kind": "primary_data"
+  },
+  {
+   "id": "s0002",
+   "url": "https://data.sec.gov/submissions/",
+   "result": 404,
+   "class": "not_found",
+   "kind": "primary_data"
+  },
+  {
+   "id": "s0003",
+   "url": "https://query1.finance.yahoo.com/v8/finance/chart/",
+   "result": 404,
+   "class": "not_found",
+   "kind": "market_data_restricted"
+  },
+  {
+   "id": "s0008",
+   "url": "https://fourweekmba.com/ai-9-of-11-big-2026-ipos-trade-below-their-first-day-close/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0013",
+   "url": "https://www.computing.co.uk/news/2026/ai/oracle-under-pressure-after-ratings-downgrade-over-ai-expansion",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0018",
+   "url": "https://www.edgen.tech/news/post/dow-hits-24th-record-of-2026-as-earnings-lift-blue-chips",
+   "result": 410,
+   "class": "not_found",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0022",
+   "url": "https://www.staradvertiser.com/2026/09/21/breaking-news/nasdaq-hits-record-high-as-ai-chip-rally-lifts-tech-stocks/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0027",
+   "url": "https://portfolio-terminal.com/markets/stock-market-close/october-6-2026",
+   "result": 429,
+   "class": "refuses_automated_clients",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0046",
+   "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0049",
+   "url": "https://kfgo.com/2026/11/10/feds-waller-plans-to-support-at-least-a-quarter-point-rate-hike-in-december/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0068",
+   "url": "https://www.eurasiareview.com/18112026-some-us-house-dems-urge-a-national-moratorium-on-buildup-of-new-data-centers/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0080",
+   "url": "https://www.upi.com/Top_News/US/2026/11/20/stocks-dow-jones-nasdaq-correction-territory/1061795214998/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "chronology"
+  },
+  {
+   "id": "s0092",
+   "url": "https://www.aol.com/news/oracle-buy-40-billion-nvidia-181443605.html",
+   "result": 404,
+   "class": "not_found",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0113",
+   "url": "https://fourweekmba.com/ai-amazon-now-carries-its-18b-anthropic-bet-at-238-7b/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0136",
+   "url": "https://www.bloomberg.com/news/articles/2025-08-22/meta-signs-10-billion-google-cloud-computing-deal-amid-ai-race",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0139",
+   "url": "https://www.mobileworldlive.com/ai-cloud/meta-platforms-continues-ai-splurge-with-14b-contract/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0142",
+   "url": "https://www.bloomberg.com/news/articles/2026-03-16/meta-to-spend-up-to-27-billion-on-ai-infrastructure-from-nebius",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0146",
+   "url": "https://www.axios.com/2026/02/17/meta-nvidia-gpu-cpu-deal",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0149",
+   "url": "https://fourweekmba.com/ai-how-microsoft-rents-ai-capacity-3-neocloud-deals-70-9b/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0156",
+   "url": "https://www.bloomberg.com/news/articles/2026-01-26/nvidia-invests-another-2-billion-in-coreweave-offers-new-chip",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0167",
+   "url": "https://fourweekmba.com/ai-sk-hynixs-top-buyer-seen-as-nvidia-paid-35-trillion-won/",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0173",
+   "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/softbank-group-and-intel-corporation-sign-2b-investment-agreement.html",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_issuer_release"
+  },
+  {
+   "id": "s0175",
+   "url": "https://www.bloomberg.com/news/articles/2025-09-09/asml-pumps-1-3-billion-into-mistral-in-boost-for-european-ai",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0180",
+   "url": "https://www.bloomberg.com/news/articles/2025-09-25/coreweave-expands-deals-with-openai-to-as-much-as-22-4-billion",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0181",
+   "url": "https://www.bloomberg.com/news/articles/2025-09-30/coreweave-inks-14-billion-meta-deal-in-latest-sign-of-ai-demand",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0182",
+   "url": "https://www.bloomberg.com/news/articles/2026-04-09/coreweave-expands-meta-deal-for-ai-computing-to-21-billion",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0184",
+   "url": "https://www.bloomberg.com/news/articles/2025-09-15/coreweave-says-nvidia-cloud-contract-valued-at-6-3-billion",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0189",
+   "url": "https://www.businesswire.com/news/home/20250226866161/en/Core-Scientific-and-CoreWeave-Announce-1.2-Billion-Expansion-at-Denton-TX-Site",
+   "result": "ReadTimeout",
+   "class": "error",
+   "kind": "relationship_issuer_release"
+  },
+  {
+   "id": "s0190",
+   "url": "https://www.aol.com/finance/core-scientific-corz-q4-2025-231526939.html",
+   "result": 404,
+   "class": "not_found",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0191",
+   "url": "https://www.hpcwire.com/off-the-wire/core-scientific-announces-termination-of-merger-agreement-with-coreweave/",
+   "result": "ReadTimeout",
+   "class": "error",
+   "kind": "relationship_issuer_release"
+  },
+  {
+   "id": "s0194",
+   "url": "https://www.theblock.co/post/367127/galaxy-closes-1-4-billion-debt-facility-to-retrofit-its-helios-bitcoin-mining-center-for-coreweave-ai-deal",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0204",
+   "url": "https://www.theblock.co/post/372315/cipher-mining-google-backed-3-billion-usd-ai-hosting-deal",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0207",
+   "url": "https://www.theblock.co/post/377285/cipher-mining-shares-jump-5-5-billion-usd-aws-ai-deal-1gw-texas-site",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0213",
+   "url": "https://www.barchart.com/story/news/36663417/hut-8-announces-ai-infrastructure-partnership-with-anthropic-and-fluidstack",
+   "result": 202,
+   "class": "error",
+   "kind": "relationship_issuer_release"
+  },
+  {
+   "id": "s0216",
+   "url": "https://ng.investing.com/news/company-news/macquarie-funds-5-billion-into-applied-digital-hpc-93CH-1710821",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0218",
+   "url": "https://ng.investing.com/news/sec-filings/applied-digital-completes-235-billion-senior-secured-notes-offering-93CH-2221967",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0229",
+   "url": "https://www.bloomberg.com/news/articles/2025-09-24/oracle-looks-to-raise-15-billion-from-corporate-bond-sale",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0231",
+   "url": "https://www.bloomberg.com/news/articles/2026-02-02/oracle-kicks-off-8-part-dollar-bond-sale-amid-ai-borrowing-push",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0234",
+   "url": "https://www.bloomberg.com/news/articles/2025-10-23/record-38-billion-debt-sale-nears-for-oracle-tied-data-centers",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0235",
+   "url": "https://www.bloomberg.com/news/articles/2025-09-04/banks-ready-38-billion-of-debt-for-data-centers-tied-to-oracle",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0237",
+   "url": "https://www.businesswire.com/news/home/20250819333311/en/Vantage-Data-Centers-Unveils-Plans-for-%E2%80%9CFrontier%E2%80%9D-a-25B-Mega-campus-in-Texas-to-Meet-Unprecedented-AI-Demand",
+   "result": "ReadTimeout",
+   "class": "error",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0238",
+   "url": "https://www.bloomberg.com/news/articles/2026-02-10/ares-lands-2-4-billion-loan-deal-for-vantage-data-centers",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0239",
+   "url": "https://www.bloomberg.com/news/articles/2025-11-07/banks-lend-18-billion-for-oracle-tied-data-center-in-new-mexico",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0245",
+   "url": "https://www.bloomberg.com/news/articles/2026-04-01/oracle-data-center-nears-16-billion-financing-after-twisty-path",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0253",
+   "url": "https://www.bloomberg.com/news/articles/2025-10-30/meta-platforms-offers-six-part-bond-amid-ai-spending-rush",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0258",
+   "url": "https://www.bloomberg.com/news/articles/2026-02-10/alphabet-begins-selling-multi-tranche-debut-swiss-franc-bond-mlgb76p8",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0260",
+   "url": "https://www.bloomberg.com/news/articles/2025-11-17/amazon-kicks-off-first-us-high-grade-bond-sale-in-three-years",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0261",
+   "url": "https://seekingalpha.com/news/4523183-amazon-raises-15b-in-first-us-bond-sale-since-2022",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0262",
+   "url": "https://www.bloomberg.com/news/articles/2026-03-10/amazon-kicks-off-11-part-us-high-grade-bond-offering",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0269",
+   "url": "https://www.businesswire.com/news/home/20260720395324/en/",
+   "result": "ReadTimeout",
+   "class": "error",
+   "kind": "relationship_issuer_release"
+  },
+  {
+   "id": "s0272",
+   "url": "https://www.bloomberg.com/news/articles/2026-03-27/softbank-secures-record-40-billion-bridge-loan-for-openai-stake",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_news"
+  },
+  {
+   "id": "s0281",
+   "url": "https://axios.com/2026/08/11/nvidia-chip-securitization-wall-street",
+   "result": 403,
+   "class": "refuses_automated_clients",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0289",
+   "url": "https://www.businesswire.com/news/home/20250603781894/en",
+   "result": "ReadTimeout",
+   "class": "error",
+   "kind": "relationship_issuer_release"
+  },
+  {
+   "id": "s0290",
+   "url": "https://www.businesswire.com/news/home/20260107185180/en/Constellation-Completes-Calpine-Transaction-Powering-Americas-Clean-Energy-Future",
+   "result": "ReadTimeout",
+   "class": "error",
+   "kind": "relationship_issuer_release"
+  },
+  {
+   "id": "s0304",
+   "url": "https://www.businesswire.com/news/home/20241114493147/en/Bloom-Energy-Announces-Gigawatt-Fuel-Cell-Procurement-Agreement-with-AEP-to-Power-AI-Data-Centers/",
+   "result": "ReadTimeout",
+   "class": "error",
+   "kind": "relationship_secondary"
+  },
+  {
+   "id": "s0306",
+   "url": "https://www.aol.com/articles/arista-anet-q4-2025-earnings-233358053.html",
+   "result": 404,
+   "class": "not_found",
+   "kind": "relationship_secondary"
+  }
+ ]
+}

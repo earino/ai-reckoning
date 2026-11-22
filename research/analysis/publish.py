@@ -182,9 +182,8 @@ def main():
     def add(url, publisher, title, kind, used_for):
         if not url or url in seen: return
         seen.add(url); srcs.append({"id": f"s{len(srcs) + 1:04d}", "url": url, "publisher": publisher, "title": title, "kind": kind, "used_for": used_for, "accessed": "2026-11-22"})
-    add("https://data.sec.gov/api/xbrl/companyfacts/", "US Securities and Exchange Commission", "EDGAR XBRL company facts API", "primary_data", "financials, identity")
-    add("https://data.sec.gov/submissions/", "US Securities and Exchange Commission", "EDGAR submissions API", "primary_data", "identity (CIK, SIC, exchange)")
-    add("https://query1.finance.yahoo.com/v8/finance/chart/", "Yahoo Finance", "Daily chart endpoint (adjusted closes, volumes)", "market_data_restricted", "returns; raw data not redistributed")
+    add("https://www.sec.gov/search-filings/edgar-application-programming-interfaces", "US Securities and Exchange Commission", "EDGAR APIs: XBRL company facts (data.sec.gov/api/xbrl/companyfacts) and submissions (data.sec.gov/submissions)", "primary_data", "financials, identity")
+    add("https://finance.yahoo.com/", "Yahoo Finance", "Daily chart endpoint query1.finance.yahoo.com/v8/finance/chart (adjusted closes, volumes)", "market_data_restricted", "returns; raw data not redistributed")
     add("https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html", "Kenneth R. French Data Library", "Fama/French daily factors and momentum factor", "primary_data", "validation of ETF factor proxies")
     for ev in timeline:
         for s in ev["sources"]: add(s.get("url"), s.get("publisher"), s.get("title"), "chronology", f"timeline {ev['date']}")

@@ -130,8 +130,8 @@
   "source_publisher": "Reuters (via AOL), citing the Financial Times",
   "source_type": "news",
   "secondary_url": null,
-  "confidence": "medium",
-  "notes": "Media report; neither company confirmed the amount. The chips serve the OpenAI contract in a-004.",
+  "confidence": "low",
+  "notes": "Media report; neither company confirmed the amount. The chips serve the OpenAI contract in a-004. Primary source link returned 'not found' at publication (2026-11-22).",
   "reciprocal_pair": false
  },
  {

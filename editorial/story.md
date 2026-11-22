@@ -196,6 +196,6 @@ This is the research instrument behind the story. Choose a view, filter the rela
 
 Drag to rotate. The page still scrolls with the wheel. Link to a selection with ?select=NVDA&view=network.
 
-Research cutoff: 20 November 2026. Published 22 November 2026. This is a static publication; it does not update automatically. 215 companies, 196 relationships, 512 sources.
+Research cutoff: 20 November 2026. Published 22 November 2026. This is a static publication; it does not update automatically. 215 companies, 196 relationships, 511 sources.
 
 This is journalism, not investment advice. No one sponsored it. Produced with an AI system; see About.

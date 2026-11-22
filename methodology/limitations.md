@@ -39,3 +39,7 @@ It is arithmetic, not a model of behaviour. It ignores hedges, fixed-rate debt s
 ## About the publication
 
 Static. It does not update. Raw price data are not redistributed. The site was built and tested by an AI system; see the corrections page to report errors.
+
+## Link audit
+
+On 22 November 2026 we requested every cited URL with a plainly identified automated client. Of roughly 510 links, about 89% answered normally and about 8% refused automated clients (paywalls and bot filters; they open in a browser). Four article links returned "not found". One relationship (Oracle's reported $40bn Nvidia chip purchase) relied on such a link as its main source and was downgraded to low confidence. The full result is in `data/provenance/link_audit.json`.

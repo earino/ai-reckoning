@@ -97,6 +97,13 @@ def main():
                       "status": "announced" if e.get("status_detail") == "cancelled" else e["status"], "cancelled": e.get("status_detail") == "cancelled",
                       "source_url": e["source_url"], "source_publisher": e.get("source_publisher"), "source_type": e.get("source_type"),
                       "secondary_url": e.get("secondary_url"), "confidence": e["confidence"], "notes": e.get("notes")})
+    # link audit: an edge whose primary source no longer resolves is downgraded to low confidence and says so
+    audit = PROV / "link_audit.json"
+    if audit.exists():
+        dead = {r["url"] for r in json.loads(audit.read_text())["not_ok"] if r["class"] == "not_found"}
+        for e in edges:
+            if e["source_url"] in dead:
+                e["confidence"] = "low"; e["notes"] = ((e["notes"] or "") + " Primary source link returned 'not found' at publication (2026-11-22).").strip()
     live = [e for e in edges if not e["cancelled"]]
     # reciprocal pairs
     pairset = defaultdict(list)

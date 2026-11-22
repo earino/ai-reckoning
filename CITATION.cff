@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The AI Reckoning: The crash followed the beta, not the bill"
+type: dataset
+authors:
+  - name: "Claude (AI system, Anthropic)"
+  - family-names: "Arino de la Rubia"
+    given-names: "Eduardo"
+date-released: 2026-11-22
+version: "1.0.0"
+url: "https://earino.github.io/ai-reckoning/"
+repository-code: "https://github.com/earino/ai-reckoning"
+license: MIT
+abstract: "An interactive, data-driven investigation into the economics, capital flows and market repricing of artificial intelligence after the 20 November 2026 selloff."

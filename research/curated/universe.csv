@@ -213,3 +213,6 @@ SHW,Sherwin-Williams,control_other,materials,control,Coatings
 PLD,Prologis,control_other,real_estate,control,Logistics REIT
 AMT,American Tower,control_other,real_estate,control,Tower REIT
 O,Realty Income,control_other,real_estate,control,Net-lease REIT
+CBRS,Cerebras Systems,compute,accelerators,limited_history,AI accelerator and inference cloud; listed 2026-05-14
+SPCX,SpaceX (incl. xAI),models_apps,model_developer,limited_history,Owns xAI model developer; listed 2026-06-12
+SKHY,SK hynix (ADR),compute,memory,limited_history,HBM supplier; ADR listed 2026-07-10

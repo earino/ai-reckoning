@@ -1,0 +1,550 @@
+{
+ "n_edges_raw": 198,
+ "n_edges": 197,
+ "n_live_edges": 196,
+ "n_nodes": 101,
+ "n_universe_nodes": 54,
+ "edges_by_status": {
+  "completed": 54,
+  "ongoing": 83,
+  "estimated": 20,
+  "conditional": 23,
+  "announced": 16
+ },
+ "edges_by_type": {
+  "equity_investment": 63,
+  "compute_purchase": 32,
+  "debt_financing": 30,
+  "capacity_commitment": 23,
+  "hardware_purchase": 22,
+  "cloud_service": 12,
+  "power_procurement": 11,
+  "ownership_revenue_share": 3
+ },
+ "edges_by_confidence": {
+  "high": 100,
+  "medium": 84,
+  "low": 12
+ },
+ "edges_by_source_type": {
+  "news": 104,
+  "issuer_release": 80,
+  "sec_filing": 7,
+  "secondary": 5
+ },
+ "edges_with_amount": 145,
+ "edges_with_realized_amount": 35,
+ "amount_totals_by_status_usd": {
+  "ongoing": {
+   "contract_total": 1581723000000.0,
+   "ceiling": 455750000000.0
+  },
+  "estimated": {
+   "ceiling": 163000000000.0,
+   "contract_total": 210400000000.0
+  },
+  "completed": {
+   "contract_total": 668500000000.0,
+   "ceiling": 20000000000.0
+  },
+  "conditional": {
+   "ceiling": 817500000000.0
+  },
+  "announced": {
+   "contract_total": 77000000000.0,
+   "ceiling": 75000000000.0
+  }
+ },
+ "realized_total_usd": 591003400000,
+ "reciprocal_pairs": [
+  {
+   "a": "AMD",
+   "b": "META",
+   "edges_a_to_b": [
+    "a-061"
+   ],
+   "edges_b_to_a": [
+    "a-060"
+   ]
+  },
+  {
+   "a": "AMD",
+   "b": "priv:openai",
+   "edges_a_to_b": [
+    "a-016"
+   ],
+   "edges_b_to_a": [
+    "a-015"
+   ]
+  },
+  {
+   "a": "AMZN",
+   "b": "ANT",
+   "edges_a_to_b": [
+    "a-026",
+    "a-027"
+   ],
+   "edges_b_to_a": [
+    "a-028"
+   ]
+  },
+  {
+   "a": "AMZN",
+   "b": "priv:openai",
+   "edges_a_to_b": [
+    "a-008"
+   ],
+   "edges_b_to_a": [
+    "a-009",
+    "a-010"
+   ]
+  },
+  {
+   "a": "ANT",
+   "b": "GOOGL",
+   "edges_a_to_b": [
+    "a-030",
+    "a-032",
+    "a-033"
+   ],
+   "edges_b_to_a": [
+    "a-029"
+   ]
+  },
+  {
+   "a": "ANT",
+   "b": "MSFT",
+   "edges_a_to_b": [
+    "a-036"
+   ],
+   "edges_b_to_a": [
+    "a-037"
+   ]
+  },
+  {
+   "a": "ANT",
+   "b": "NVDA",
+   "edges_a_to_b": [
+    "a-039"
+   ],
+   "edges_b_to_a": [
+    "a-038"
+   ]
+  },
+  {
+   "a": "MSFT",
+   "b": "priv:openai",
+   "edges_a_to_b": [
+    "a-001"
+   ],
+   "edges_b_to_a": [
+    "a-002",
+    "a-003"
+   ]
+  },
+  {
+   "a": "NVDA",
+   "b": "priv:openai",
+   "edges_a_to_b": [
+    "a-011",
+    "a-012"
+   ],
+   "edges_b_to_a": [
+    "a-013",
+    "a-014"
+   ]
+  }
+ ],
+ "communities": [
+  {
+   "id": 0,
+   "size": 25,
+   "members": [
+    "NVDA",
+    "priv:openai",
+    "META",
+    "MSFT",
+    "CRWV",
+    "pool:banks",
+    "IREN",
+    "NBIS"
+   ]
+  },
+  {
+   "id": 1,
+   "size": 24,
+   "members": [
+    "ANT",
+    "GOOGL",
+    "SPCX",
+    "pool:private",
+    "priv:fluidstack",
+    "pool:equity",
+    "005930.KS",
+    "CIFR"
+   ]
+  },
+  {
+   "id": 2,
+   "size": 18,
+   "members": [
+    "ORCL",
+    "pool:bonds",
+    "AMZN",
+    "APLD",
+    "veh:hyperion",
+    "OWL",
+    "BE",
+    "veh:jupiter"
+   ]
+  },
+  {
+   "id": 3,
+   "size": 6,
+   "members": [
+    "SFTBY",
+    "veh:stargate",
+    "INTC",
+    "priv:dbrg",
+    "ARM",
+    "priv:ampere-computing"
+   ]
+  },
+  {
+   "id": 4,
+   "size": 3,
+   "members": [
+    "priv:vantage",
+    "priv:silverlake-dbrg",
+    "ARES"
+   ]
+  },
+  {
+   "id": 5,
+   "size": 3,
+   "members": [
+    "veh:elpaso",
+    "JPM",
+    "BLK"
+   ]
+  },
+  {
+   "id": 6,
+   "size": 3,
+   "members": [
+    "SU.PA",
+    "DLR",
+    "priv:switch"
+   ]
+  },
+  {
+   "id": 7,
+   "size": 3,
+   "members": [
+    "CEG",
+    "priv:calpine",
+    "gov:doe"
+   ]
+  }
+ ],
+ "density": 0.028910891089108912,
+ "concentration": {
+  "firm_commitment_total_usd": 2725973000000,
+  "n_firm_edges_with_amount": 99,
+  "top_nodes_by_firm_amount_touched": [
+   {
+    "id": "ANT",
+    "name": "Anthropic",
+    "amount": 877940000000.0,
+    "share_of_total": 0.32206481869042725
+   },
+   {
+    "id": "priv:openai",
+    "name": "OpenAI",
+    "amount": 827400000000.0,
+    "share_of_total": 0.30352464973057325
+   },
+   {
+    "id": "AMZN",
+    "name": "Amazon",
+    "amount": 399000000000.0,
+    "share_of_total": 0.14636975494621554
+   },
+   {
+    "id": "MSFT",
+    "name": "Microsoft",
+    "amount": 397900000000.0,
+    "share_of_total": 0.14596622930601294
+   },
+   {
+    "id": "ORCL",
+    "name": "Oracle",
+    "amount": 363000000000.0,
+    "share_of_total": 0.13316346126685774
+   },
+   {
+    "id": "pool:bonds",
+    "name": "Bond investors (public debt markets)",
+    "amount": 267160000000.0,
+    "share_of_total": 0.09800537276047855
+   },
+   {
+    "id": "SPCX",
+    "name": "SpaceX (incl. xAI)",
+    "amount": 245900000000.0,
+    "share_of_total": 0.0902063226598356
+   },
+   {
+    "id": "GOOGL",
+    "name": "Alphabet (Class A)",
+    "amount": 216410000000.0,
+    "share_of_total": 0.07938816708749499
+   },
+   {
+    "id": "META",
+    "name": "Meta Platforms",
+    "amount": 199700000000.0,
+    "share_of_total": 0.07325824577132642
+   },
+   {
+    "id": "AVGO",
+    "name": "Broadcom",
+    "amount": 182200000000.0,
+    "share_of_total": 0.06683851967719416
+   },
+   {
+    "id": "pool:equity",
+    "name": "Public equity investors (IPOs, share sales)",
+    "amount": 181890000000.0,
+    "share_of_total": 0.06672479881495524
+   },
+   {
+    "id": "CRWV",
+    "name": "CoreWeave",
+    "amount": 158900000000.0,
+    "share_of_total": 0.058291112934720925
+   }
+  ],
+  "share_touching_top1": 0.32206481869042725,
+  "share_touching_top2": 0.6255894684210005,
+  "share_touching_top5": 0.7279382444360234,
+  "payer_hhi": 0.14972506866419588,
+  "payer_shares": [
+   {
+    "id": "priv:openai",
+    "name": "OpenAI",
+    "share": 0.2688214446731497,
+    "amount": 732800000000
+   },
+   {
+    "id": "ANT",
+    "name": "Anthropic",
+    "share": 0.22502057063661304,
+    "amount": 613400000000
+   },
+   {
+    "id": "pool:bonds",
+    "name": "Bond investors (public debt markets)",
+    "share": 0.09800537276047855,
+    "amount": 267160000000
+   },
+   {
+    "id": "pool:equity",
+    "name": "Public equity investors (IPOs, share sales)",
+    "share": 0.06672479881495524,
+    "amount": 181890000000
+   },
+   {
+    "id": "pool:banks",
+    "name": "Bank loan syndicates",
+    "share": 0.05511793403676412,
+    "amount": 150250000000
+   },
+   {
+    "id": "META",
+    "name": "Meta Platforms",
+    "share": 0.05308196376119646,
+    "amount": 144700000000
+   },
+   {
+    "id": "pool:private",
+    "name": "Private-round investors",
+    "share": 0.050862572740082164,
+    "amount": 138650000000
+   },
+   {
+    "id": "MSFT",
+    "name": "Microsoft",
+    "share": 0.037784673582607016,
+    "amount": 103000000000
+   },
+   {
+    "id": "NVDA",
+    "name": "Nvidia",
+    "share": 0.029824213225883016,
+    "amount": 81300000000
+   },
+   {
+    "id": "SFTBY",
+    "name": "SoftBank Group (ADR)",
+    "share": 0.02608243001673164,
+    "amount": 71100000000
+   }
+  ],
+  "recipient_shares": [
+   {
+    "id": "ORCL",
+    "name": "Oracle",
+    "share": 0.13316346126685774,
+    "amount": 363000000000
+   },
+   {
+    "id": "AMZN",
+    "name": "Amazon",
+    "share": 0.12545978995389903,
+    "amount": 342000000000
+   },
+   {
+    "id": "MSFT",
+    "name": "Microsoft",
+    "share": 0.10818155572340592,
+    "amount": 294900000000
+   },
+   {
+    "id": "ANT",
+    "name": "Anthropic",
+    "share": 0.09704424805381417,
+    "amount": 264540000000
+   },
+   {
+    "id": "SPCX",
+    "name": "SpaceX (incl. xAI)",
+    "share": 0.0902063226598356,
+    "amount": 245900000000
+   },
+   {
+    "id": "AVGO",
+    "name": "Broadcom",
+    "share": 0.06683851967719416,
+    "amount": 182200000000
+   },
+   {
+    "id": "GOOGL",
+    "name": "Alphabet (Class A)",
+    "share": 0.05356252611452865,
+    "amount": 146010000000
+   },
+   {
+    "id": "CRWV",
+    "name": "CoreWeave",
+    "share": 0.05051407332354356,
+    "amount": 137700000000
+   },
+   {
+    "id": "NBIS",
+    "name": "Nebius Group",
+    "share": 0.035510256337828734,
+    "amount": 96800000000
+   },
+   {
+    "id": "priv:openai",
+    "name": "OpenAI",
+    "share": 0.03470320505742353,
+    "amount": 94600000000
+   }
+  ],
+  "note": "Firm = status completed or ongoing with a contract total or ceiling. Excludes stake values, annual run-rates and undisclosed amounts. Shares describe DISCLOSED amounts only."
+ },
+ "degree_top": [
+  {
+   "id": "NVDA",
+   "name": "Nvidia",
+   "degree": 20,
+   "betweenness": 0.2033
+  },
+  {
+   "id": "ANT",
+   "name": "Anthropic",
+   "degree": 18,
+   "betweenness": 0.1806
+  },
+  {
+   "id": "priv:openai",
+   "name": "OpenAI",
+   "degree": 13,
+   "betweenness": 0.1198
+  },
+  {
+   "id": "META",
+   "name": "Meta Platforms",
+   "degree": 13,
+   "betweenness": 0.1305
+  },
+  {
+   "id": "GOOGL",
+   "name": "Alphabet (Class A)",
+   "degree": 12,
+   "betweenness": 0.1182
+  },
+  {
+   "id": "MSFT",
+   "name": "Microsoft",
+   "degree": 9,
+   "betweenness": 0.0586
+  },
+  {
+   "id": "CRWV",
+   "name": "CoreWeave",
+   "degree": 9,
+   "betweenness": 0.1081
+  },
+  {
+   "id": "ORCL",
+   "name": "Oracle",
+   "degree": 8,
+   "betweenness": 0.0796
+  },
+  {
+   "id": "SPCX",
+   "name": "SpaceX (incl. xAI)",
+   "degree": 8,
+   "betweenness": 0.0499
+  },
+  {
+   "id": "SFTBY",
+   "name": "SoftBank Group (ADR)",
+   "degree": 7,
+   "betweenness": 0.0575
+  },
+  {
+   "id": "AMZN",
+   "name": "Amazon",
+   "degree": 7,
+   "betweenness": 0.0548
+  },
+  {
+   "id": "pool:banks",
+   "name": "Bank loan syndicates",
+   "degree": 7,
+   "betweenness": 0.0802
+  },
+  {
+   "id": "pool:bonds",
+   "name": "Bond investors (public debt markets)",
+   "degree": 7,
+   "betweenness": 0.0581
+  },
+  {
+   "id": "pool:private",
+   "name": "Private-round investors",
+   "degree": 6,
+   "betweenness": 0.0417
+  },
+  {
+   "id": "priv:fluidstack",
+   "name": "Fluidstack",
+   "degree": 5,
+   "betweenness": 0.0124
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Company",
+  "type": "object",
+  "required": ["ticker", "name", "role", "subrole", "tier", "classification_basis", "history", "identity_status", "mcap_status", "graph_degree"],
+  "properties": {
+    "ticker": { "type": "string", "minLength": 1 },
+    "role": { "enum": ["compute", "infrastructure", "energy", "models_apps", "capital", "control_tech", "control_other"] },
+    "tier": { "enum": ["primary", "secondary", "control", "limited_history"] },
+    "history": { "enum": ["full", "limited"] },
+    "cik": { "type": ["string", "null"], "pattern": "^\\d{10}$" },
+    "mcap_event": { "type": ["number", "null"], "minimum": 0 },
+    "mcap_status": { "enum": ["approximate", "not_available"] }
+  }
+}

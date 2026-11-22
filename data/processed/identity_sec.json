@@ -1,0 +1,4021 @@
+{
+ "resolved": [
+  {
+   "ticker": "NVDA",
+   "cik": "0001045810",
+   "sec_name": "NVIDIA CORP",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "NVDA"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001045810.json"
+  },
+  {
+   "ticker": "AMD",
+   "cik": "0000002488",
+   "sec_name": "ADVANCED MICRO DEVICES INC",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AMD"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1226",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000002488.json"
+  },
+  {
+   "ticker": "AVGO",
+   "cik": "0001730168",
+   "sec_name": "Broadcom Inc.",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AVGO"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1101",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001730168.json"
+  },
+  {
+   "ticker": "MRVL",
+   "cik": "0001835632",
+   "sec_name": "Marvell Technology, Inc.",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "MRVL"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0130",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001835632.json"
+  },
+  {
+   "ticker": "MU",
+   "cik": "0000723125",
+   "sec_name": "MICRON TECHNOLOGY INC",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "MU"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0902",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000723125.json"
+  },
+  {
+   "ticker": "WDC",
+   "cik": "0000106040",
+   "sec_name": "WESTERN DIGITAL CORP",
+   "sic": "3572",
+   "sic_description": "Computer Storage Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "WDC"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0703",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000106040.json"
+  },
+  {
+   "ticker": "STX",
+   "cik": "0001137789",
+   "sec_name": "Seagate Technology Holdings plc",
+   "sic": "3572",
+   "sic_description": "Computer Storage Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "STX"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "0627",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001137789.json"
+  },
+  {
+   "ticker": "SNDK",
+   "cik": "0002023554",
+   "sec_name": "Sandisk Corp",
+   "sic": "3572",
+   "sic_description": "Computer Storage Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "SNDK"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0702",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0002023554.json"
+  },
+  {
+   "ticker": "INTC",
+   "cik": "0000050863",
+   "sec_name": "INTEL CORP",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "INTC"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1226",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000050863.json"
+  },
+  {
+   "ticker": "QCOM",
+   "cik": "0000804328",
+   "sec_name": "QUALCOMM INC/DE",
+   "sic": "3663",
+   "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "QCOM"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0927",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000804328.json"
+  },
+  {
+   "ticker": "TSM",
+   "cik": "0001046179",
+   "sec_name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "sec_tickers": [
+    "TSM",
+    "TSMWF"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "other",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001046179.json"
+  },
+  {
+   "ticker": "ASML",
+   "cik": "0000937966",
+   "sec_name": "ASML HOLDING NV",
+   "sic": "3559",
+   "sic_description": "Special Industry Machinery, NEC",
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "sec_tickers": [
+    "ASML",
+    "ASMLF"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "other",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000937966.json"
+  },
+  {
+   "ticker": "AMAT",
+   "cik": "0000006951",
+   "sec_name": "APPLIED MATERIALS INC /DE",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AMAT"
+   ],
+   "state_of_incorporation": "DC",
+   "fiscal_year_end": "1026",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000006951.json"
+  },
+  {
+   "ticker": "LRCX",
+   "cik": "0000707549",
+   "sec_name": "LAM RESEARCH CORP",
+   "sic": "3559",
+   "sic_description": "Special Industry Machinery, NEC",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "LRCX"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0627",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000707549.json"
+  },
+  {
+   "ticker": "KLAC",
+   "cik": "0000319201",
+   "sec_name": "KLA CORP",
+   "sic": "3827",
+   "sic_description": "Optical Instruments & Lenses",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "KLAC"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0630",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000319201.json"
+  },
+  {
+   "ticker": "TER",
+   "cik": "0000097210",
+   "sec_name": "TERADYNE, INC",
+   "sic": "3825",
+   "sic_description": "Instruments For Meas & Testing of  Electricity & Elec Signals",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TER"
+   ],
+   "state_of_incorporation": "MA",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000097210.json"
+  },
+  {
+   "ticker": "ONTO",
+   "cik": "0000704532",
+   "sec_name": "ONTO INNOVATION INC.",
+   "sic": "3829",
+   "sic_description": "Measuring & Controlling Devices, NEC",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ONTO"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1226",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000704532.json"
+  },
+  {
+   "ticker": "AMKR",
+   "cik": "0001047127",
+   "sec_name": "AMKOR TECHNOLOGY, INC.",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AMKR"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001047127.json"
+  },
+  {
+   "ticker": "ENTG",
+   "cik": "0001101302",
+   "sec_name": "ENTEGRIS INC",
+   "sic": "3089",
+   "sic_description": "Plastics Products, NEC",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ENTG"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001101302.json"
+  },
+  {
+   "ticker": "ARM",
+   "cik": "0001973239",
+   "sec_name": "ARM HOLDINGS PLC /UK",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ARM"
+   ],
+   "state_of_incorporation": "X0",
+   "fiscal_year_end": "0331",
+   "entity_type": "other",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001973239.json"
+  },
+  {
+   "ticker": "SNPS",
+   "cik": "0000883241",
+   "sec_name": "SYNOPSYS INC",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "SNPS"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1031",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000883241.json"
+  },
+  {
+   "ticker": "CDNS",
+   "cik": "0000813672",
+   "sec_name": "CADENCE DESIGN SYSTEMS INC",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CDNS"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000813672.json"
+  },
+  {
+   "ticker": "ANET",
+   "cik": "0001596532",
+   "sec_name": "Arista Networks, Inc.",
+   "sic": "3576",
+   "sic_description": "Computer Communications Equipment",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ANET"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001596532.json"
+  },
+  {
+   "ticker": "CRDO",
+   "cik": "0001807794",
+   "sec_name": "Credo Technology Group Holding Ltd",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CRDO"
+   ],
+   "state_of_incorporation": "E9",
+   "fiscal_year_end": "0429",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001807794.json"
+  },
+  {
+   "ticker": "ALAB",
+   "cik": "0001736297",
+   "sec_name": "Astera Labs, Inc.",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ALAB"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001736297.json"
+  },
+  {
+   "ticker": "COHR",
+   "cik": "0000820318",
+   "sec_name": "COHERENT CORP.",
+   "sic": "3827",
+   "sic_description": "Optical Instruments & Lenses",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "COHR"
+   ],
+   "state_of_incorporation": "PA",
+   "fiscal_year_end": "0630",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000820318.json"
+  },
+  {
+   "ticker": "LITE",
+   "cik": "0001633978",
+   "sec_name": "Lumentum Holdings Inc.",
+   "sic": "3669",
+   "sic_description": "Communications Equipment, NEC",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "LITE"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0627",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001633978.json"
+  },
+  {
+   "ticker": "CIEN",
+   "cik": "0000936395",
+   "sec_name": "CIENA CORP",
+   "sic": "3661",
+   "sic_description": "Telephone & Telegraph Apparatus",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CIEN"
+   ],
+   "state_of_incorporation": "MD",
+   "fiscal_year_end": "1031",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000936395.json"
+  },
+  {
+   "ticker": "MPWR",
+   "cik": "0001280452",
+   "sec_name": "MONOLITHIC POWER SYSTEMS, INC.",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "MPWR"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001280452.json"
+  },
+  {
+   "ticker": "APH",
+   "cik": "0000820313",
+   "sec_name": "AMPHENOL CORP /DE/",
+   "sic": "3678",
+   "sic_description": "Electronic Connectors",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "APH"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000820313.json"
+  },
+  {
+   "ticker": "GLW",
+   "cik": "0000024741",
+   "sec_name": "CORNING INC /NY",
+   "sic": "3357",
+   "sic_description": "Drawing & Insulating of  Nonferrous Wire",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "GLW"
+   ],
+   "state_of_incorporation": "NY",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000024741.json"
+  },
+  {
+   "ticker": "FN",
+   "cik": "0001408710",
+   "sec_name": "Fabrinet",
+   "sic": "3661",
+   "sic_description": "Telephone & Telegraph Apparatus",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "FN"
+   ],
+   "state_of_incorporation": "E9",
+   "fiscal_year_end": "0627",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001408710.json"
+  },
+  {
+   "ticker": "CLS",
+   "cik": "0001030894",
+   "sec_name": "CELESTICA INC",
+   "sic": "3672",
+   "sic_description": "Printed Circuit Boards",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CLS"
+   ],
+   "state_of_incorporation": "A6",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001030894.json"
+  },
+  {
+   "ticker": "DELL",
+   "cik": "0001571996",
+   "sec_name": "Dell Technologies Inc.",
+   "sic": "3571",
+   "sic_description": "Electronic Computers",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "DELL"
+   ],
+   "state_of_incorporation": "TX",
+   "fiscal_year_end": "0129",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001571996.json"
+  },
+  {
+   "ticker": "SMCI",
+   "cik": "0001375365",
+   "sec_name": "Super Micro Computer, Inc.",
+   "sic": "3571",
+   "sic_description": "Electronic Computers",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "SMCI",
+    "SMCIP"
+   ],
+   "state_of_incorporation": "CA",
+   "fiscal_year_end": "0630",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001375365.json"
+  },
+  {
+   "ticker": "HPE",
+   "cik": "0001645590",
+   "sec_name": "Hewlett Packard Enterprise Co",
+   "sic": "3570",
+   "sic_description": "Computer & office Equipment",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "HPE",
+    "HPE-PC"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1031",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001645590.json"
+  },
+  {
+   "ticker": "CSCO",
+   "cik": "0000858877",
+   "sec_name": "CISCO SYSTEMS, INC.",
+   "sic": "3576",
+   "sic_description": "Computer Communications Equipment",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CSCO"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0731",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000858877.json"
+  },
+  {
+   "ticker": "MSFT",
+   "cik": "0000789019",
+   "sec_name": "MICROSOFT CORP",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "MSFT"
+   ],
+   "state_of_incorporation": "WA",
+   "fiscal_year_end": "0630",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000789019.json"
+  },
+  {
+   "ticker": "GOOGL",
+   "cik": "0001652044",
+   "sec_name": "Alphabet Inc.",
+   "sic": "7370",
+   "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq",
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "GOOGL",
+    "GOOG",
+    "GOOGM",
+    "GOOGN"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001652044.json"
+  },
+  {
+   "ticker": "AMZN",
+   "cik": "0001018724",
+   "sec_name": "AMAZON COM INC",
+   "sic": "5961",
+   "sic_description": "Retail-Catalog & Mail-Order Houses",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AMZN"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001018724.json"
+  },
+  {
+   "ticker": "META",
+   "cik": "0001326801",
+   "sec_name": "Meta Platforms, Inc.",
+   "sic": "7370",
+   "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "META",
+    "METAM"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001326801.json"
+  },
+  {
+   "ticker": "ORCL",
+   "cik": "0001341439",
+   "sec_name": "ORACLE CORP",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ORCL",
+    "ORCL-PD"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "0531",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001341439.json"
+  },
+  {
+   "ticker": "CRWV",
+   "cik": "0001769628",
+   "sec_name": "CoreWeave, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CRWV"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001769628.json"
+  },
+  {
+   "ticker": "NBIS",
+   "cik": "0001513845",
+   "sec_name": "Nebius Group N.V.",
+   "sic": "7370",
+   "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "NBIS"
+   ],
+   "state_of_incorporation": "P7",
+   "fiscal_year_end": null,
+   "entity_type": "other",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001513845.json"
+  },
+  {
+   "ticker": "IREN",
+   "cik": "0001878848",
+   "sec_name": "IREN Ltd",
+   "sic": "6199",
+   "sic_description": "Finance Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "IREN"
+   ],
+   "state_of_incorporation": "C3",
+   "fiscal_year_end": "0630",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001878848.json"
+  },
+  {
+   "ticker": "APLD",
+   "cik": "0001144879",
+   "sec_name": "Applied Digital Corp.",
+   "sic": "7374",
+   "sic_description": "Services-Computer Processing & Data Preparation",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "APLD"
+   ],
+   "state_of_incorporation": "NV",
+   "fiscal_year_end": "0531",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001144879.json"
+  },
+  {
+   "ticker": "CIFR",
+   "cik": "0001819989",
+   "sec_name": "Cipher Digital Inc.",
+   "sic": "6199",
+   "sic_description": "Finance Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CIFR"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001819989.json"
+  },
+  {
+   "ticker": "WULF",
+   "cik": "0001083301",
+   "sec_name": "TERAWULF INC.",
+   "sic": "6199",
+   "sic_description": "Finance Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "WULF"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001083301.json"
+  },
+  {
+   "ticker": "CORZ",
+   "cik": "0001839341",
+   "sec_name": "Core Scientific, Inc./tx",
+   "sic": "6199",
+   "sic_description": "Finance Services",
+   "exchanges": [
+    "Nasdaq",
+    "OTC",
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CORZ",
+    "CORZR",
+    "CORZW",
+    "CORZZ"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001839341.json"
+  },
+  {
+   "ticker": "GLXY",
+   "cik": "0001859392",
+   "sec_name": "Galaxy Digital Inc.",
+   "sic": "6211",
+   "sic_description": "Security Brokers, Dealers & Flotation Companies",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "GLXY"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001859392.json"
+  },
+  {
+   "ticker": "HUT",
+   "cik": "0001964789",
+   "sec_name": "Hut 8 Corp.",
+   "sic": "6199",
+   "sic_description": "Finance Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "HUT"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001964789.json"
+  },
+  {
+   "ticker": "RIOT",
+   "cik": "0001167419",
+   "sec_name": "Riot Platforms, Inc.",
+   "sic": "6199",
+   "sic_description": "Finance Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "RIOT"
+   ],
+   "state_of_incorporation": "NV",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001167419.json"
+  },
+  {
+   "ticker": "BTDR",
+   "cik": "0001899123",
+   "sec_name": "Bitdeer Technologies Group",
+   "sic": "6199",
+   "sic_description": "Finance Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "BTDR"
+   ],
+   "state_of_incorporation": "E9",
+   "fiscal_year_end": "1231",
+   "entity_type": "other",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001899123.json"
+  },
+  {
+   "ticker": "EQIX",
+   "cik": "0001101239",
+   "sec_name": "EQUINIX INC",
+   "sic": "6798",
+   "sic_description": "Real Estate Investment Trusts",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "EQIX"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001101239.json"
+  },
+  {
+   "ticker": "DLR",
+   "cik": "0001297996",
+   "sec_name": "DIGITAL REALTY TRUST, INC.",
+   "sic": "6798",
+   "sic_description": "Real Estate Investment Trusts",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "DLR",
+    "DLR-PK",
+    "DLR-PJ",
+    "DLR-PL"
+   ],
+   "state_of_incorporation": "MD",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001297996.json"
+  },
+  {
+   "ticker": "IRM",
+   "cik": "0001020569",
+   "sec_name": "IRON MOUNTAIN INC",
+   "sic": "6798",
+   "sic_description": "Real Estate Investment Trusts",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "IRM"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001020569.json"
+  },
+  {
+   "ticker": "CEG",
+   "cik": "0001868275",
+   "sec_name": "Constellation Energy Corp",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CEG"
+   ],
+   "state_of_incorporation": "PA",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001868275.json"
+  },
+  {
+   "ticker": "VST",
+   "cik": "0001692819",
+   "sec_name": "Vistra Corp.",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "VST"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001692819.json"
+  },
+  {
+   "ticker": "TLN",
+   "cik": "0001622536",
+   "sec_name": "Talen Energy Corp",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TLN"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001622536.json"
+  },
+  {
+   "ticker": "NRG",
+   "cik": "0001013871",
+   "sec_name": "NRG ENERGY, INC.",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "NRG"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001013871.json"
+  },
+  {
+   "ticker": "NEE",
+   "cik": "0000753308",
+   "sec_name": "NEXTERA ENERGY INC",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "NEE",
+    "NEE-PN",
+    "NEE-PS",
+    "NEE-PT",
+    "NEE-PU",
+    "NEE-PV",
+    "NEE-PW"
+   ],
+   "state_of_incorporation": "FL",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000753308.json"
+  },
+  {
+   "ticker": "OKLO",
+   "cik": "0001849056",
+   "sec_name": "Oklo Inc.",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "OKLO"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001849056.json"
+  },
+  {
+   "ticker": "SMR",
+   "cik": "0001822966",
+   "sec_name": "NUSCALE POWER Corp",
+   "sic": "3443",
+   "sic_description": "Fabricated Plate Work (Boiler Shops)",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "SMR"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001822966.json"
+  },
+  {
+   "ticker": "CCJ",
+   "cik": "0001009001",
+   "sec_name": "CAMECO CORP",
+   "sic": "1090",
+   "sic_description": "Miscellaneous Metal Ores",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CCJ"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "other",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001009001.json"
+  },
+  {
+   "ticker": "LEU",
+   "cik": "0001065059",
+   "sec_name": "CENTRUS ENERGY CORP",
+   "sic": "1400",
+   "sic_description": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "LEU"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001065059.json"
+  },
+  {
+   "ticker": "GEV",
+   "cik": "0001996810",
+   "sec_name": "GE Vernova Inc.",
+   "sic": "3600",
+   "sic_description": "Electronic & Other Electrical Equipment (No Computer Equip)",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "GEV"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001996810.json"
+  },
+  {
+   "ticker": "BE",
+   "cik": "0001664703",
+   "sec_name": "Bloom Energy Corp",
+   "sic": "3620",
+   "sic_description": "Electrical Industrial Apparatus",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "BE"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001664703.json"
+  },
+  {
+   "ticker": "ETN",
+   "cik": "0001551182",
+   "sec_name": "Eaton Corp plc",
+   "sic": "3590",
+   "sic_description": "Misc Industrial & Commercial Machinery & Equipment",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ETN"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001551182.json"
+  },
+  {
+   "ticker": "VRT",
+   "cik": "0001674101",
+   "sec_name": "Vertiv Holdings Co",
+   "sic": "3679",
+   "sic_description": "Electronic Components, NEC",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "VRT"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001674101.json"
+  },
+  {
+   "ticker": "HUBB",
+   "cik": "0000048898",
+   "sec_name": "HUBBELL INC",
+   "sic": "3670",
+   "sic_description": "Electronic Components & Accessories",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "HUBB"
+   ],
+   "state_of_incorporation": "CT",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000048898.json"
+  },
+  {
+   "ticker": "POWL",
+   "cik": "0000080420",
+   "sec_name": "POWELL INDUSTRIES INC",
+   "sic": "3613",
+   "sic_description": "Switchgear & Switchboard Apparatus",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "POWL"
+   ],
+   "state_of_incorporation": "NV",
+   "fiscal_year_end": "0930",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000080420.json"
+  },
+  {
+   "ticker": "NVT",
+   "cik": "0001720635",
+   "sec_name": "nVent Electric plc",
+   "sic": "3550",
+   "sic_description": "Special Industry Machinery (No Metalworking Machinery)",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "NVT"
+   ],
+   "state_of_incorporation": "L2",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001720635.json"
+  },
+  {
+   "ticker": "MOD",
+   "cik": "0000067347",
+   "sec_name": "MODEXUS SOLUTIONS, INC.",
+   "sic": "3585",
+   "sic_description": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "MOD"
+   ],
+   "state_of_incorporation": "WI",
+   "fiscal_year_end": "0331",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000067347.json"
+  },
+  {
+   "ticker": "TT",
+   "cik": "0001466258",
+   "sec_name": "Trane Technologies plc",
+   "sic": "3822",
+   "sic_description": "Auto Controls For Regulating Residential & Comml Environments",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "TT"
+   ],
+   "state_of_incorporation": "L2",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001466258.json"
+  },
+  {
+   "ticker": "JCI",
+   "cik": "0000833444",
+   "sec_name": "Johnson Controls International plc",
+   "sic": "3585",
+   "sic_description": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "JCI"
+   ],
+   "state_of_incorporation": "L2",
+   "fiscal_year_end": "0930",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000833444.json"
+  },
+  {
+   "ticker": "AAON",
+   "cik": "0000824142",
+   "sec_name": "AAON, INC.",
+   "sic": "3585",
+   "sic_description": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AAON"
+   ],
+   "state_of_incorporation": "NV",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000824142.json"
+  },
+  {
+   "ticker": "PWR",
+   "cik": "0001050915",
+   "sec_name": "QUANTA SERVICES, INC.",
+   "sic": "1731",
+   "sic_description": "Electrical Work",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "PWR"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001050915.json"
+  },
+  {
+   "ticker": "EME",
+   "cik": "0000105634",
+   "sec_name": "EMCOR Group, Inc.",
+   "sic": "1731",
+   "sic_description": "Electrical Work",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "EME"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000105634.json"
+  },
+  {
+   "ticker": "FIX",
+   "cik": "0001035983",
+   "sec_name": "COMFORT SYSTEMS USA INC",
+   "sic": "1731",
+   "sic_description": "Electrical Work",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "FIX"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001035983.json"
+  },
+  {
+   "ticker": "MTZ",
+   "cik": "0000015615",
+   "sec_name": "MASTEC INC",
+   "sic": "1623",
+   "sic_description": "Water, Sewer, Pipeline, Comm & Power Line Construction",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "MTZ"
+   ],
+   "state_of_incorporation": "FL",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000015615.json"
+  },
+  {
+   "ticker": "STRL",
+   "cik": "0000874238",
+   "sec_name": "STERLING INFRASTRUCTURE, INC.",
+   "sic": "1600",
+   "sic_description": "Heavy Construction Other Than Bldg Const - Contractors",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "STRL"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000874238.json"
+  },
+  {
+   "ticker": "IESC",
+   "cik": "0001048268",
+   "sec_name": "IES Holdings, Inc.",
+   "sic": "1731",
+   "sic_description": "Electrical Work",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "IESC"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0930",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001048268.json"
+  },
+  {
+   "ticker": "PRIM",
+   "cik": "0001361538",
+   "sec_name": "Primoris Services Corp",
+   "sic": "1623",
+   "sic_description": "Water, Sewer, Pipeline, Comm & Power Line Construction",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "PRIM"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001361538.json"
+  },
+  {
+   "ticker": "CAT",
+   "cik": "0000018230",
+   "sec_name": "CATERPILLAR INC",
+   "sic": "3531",
+   "sic_description": "Construction Machinery & Equip",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CAT"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000018230.json"
+  },
+  {
+   "ticker": "CMI",
+   "cik": "0000026172",
+   "sec_name": "CUMMINS INC",
+   "sic": "3510",
+   "sic_description": "Engines & Turbines",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CMI"
+   ],
+   "state_of_incorporation": "IN",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000026172.json"
+  },
+  {
+   "ticker": "SO",
+   "cik": "0000092122",
+   "sec_name": "SOUTHERN CO",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "SO",
+    "SOJC",
+    "SOJD",
+    "SOJE",
+    "SOJF",
+    "SOMN"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000092122.json"
+  },
+  {
+   "ticker": "DUK",
+   "cik": "0001326160",
+   "sec_name": "Duke Energy CORP",
+   "sic": "4931",
+   "sic_description": "Electric & Other Services Combined",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "DUK",
+    "DUKB",
+    "DUK-PA",
+    "DUKU"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001326160.json"
+  },
+  {
+   "ticker": "D",
+   "cik": "0000715957",
+   "sec_name": "DOMINION ENERGY, INC",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "D"
+   ],
+   "state_of_incorporation": "VA",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000715957.json"
+  },
+  {
+   "ticker": "AEP",
+   "cik": "0000004904",
+   "sec_name": "AMERICAN ELECTRIC POWER CO INC",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AEP"
+   ],
+   "state_of_incorporation": "NY",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000004904.json"
+  },
+  {
+   "ticker": "ETR",
+   "cik": "0000065984",
+   "sec_name": "ENTERGY CORP /DE/",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ETR"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000065984.json"
+  },
+  {
+   "ticker": "XEL",
+   "cik": "0000072903",
+   "sec_name": "XCEL ENERGY INC",
+   "sic": "4931",
+   "sic_description": "Electric & Other Services Combined",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "XEL",
+    "XELLL"
+   ],
+   "state_of_incorporation": "MN",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000072903.json"
+  },
+  {
+   "ticker": "PPL",
+   "cik": "0000922224",
+   "sec_name": "PPL Corp",
+   "sic": "4911",
+   "sic_description": "Electric Services",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "PPL",
+    "PPLC"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000922224.json"
+  },
+  {
+   "ticker": "PEG",
+   "cik": "0000788784",
+   "sec_name": "PUBLIC SERVICE ENTERPRISE GROUP INC",
+   "sic": "4931",
+   "sic_description": "Electric & Other Services Combined",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "PEG"
+   ],
+   "state_of_incorporation": "NJ",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000788784.json"
+  },
+  {
+   "ticker": "ANT",
+   "cik": "0002130357",
+   "sec_name": "Anthropic, PBC",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    null
+   ],
+   "sec_tickers": [
+    "ANT"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "other",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0002130357.json"
+  },
+  {
+   "ticker": "PLTR",
+   "cik": "0001321655",
+   "sec_name": "Palantir Technologies Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "PLTR"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001321655.json"
+  },
+  {
+   "ticker": "AI",
+   "cik": "0001577526",
+   "sec_name": "C3.ai, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "AI"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0430",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001577526.json"
+  },
+  {
+   "ticker": "SOUN",
+   "cik": "0001840856",
+   "sec_name": "SOUNDHOUND AI, INC.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "SOUN",
+    "SOUNW"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001840856.json"
+  },
+  {
+   "ticker": "BBAI",
+   "cik": "0001836981",
+   "sec_name": "BigBear.ai Holdings, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "BBAI",
+    "BBAI-WT"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001836981.json"
+  },
+  {
+   "ticker": "TEM",
+   "cik": "0001717115",
+   "sec_name": "Tempus AI, Inc.",
+   "sic": "7370",
+   "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TEM"
+   ],
+   "state_of_incorporation": "NV",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001717115.json"
+  },
+  {
+   "ticker": "PATH",
+   "cik": "0001734722",
+   "sec_name": "UiPath, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "PATH"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001734722.json"
+  },
+  {
+   "ticker": "APP",
+   "cik": "0001751008",
+   "sec_name": "AppLovin Corp",
+   "sic": "7370",
+   "sic_description": "Services-Computer Programming, Data Processing, Etc.",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "APP"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001751008.json"
+  },
+  {
+   "ticker": "SNOW",
+   "cik": "0001640147",
+   "sec_name": "Snowflake Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "SNOW"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001640147.json"
+  },
+  {
+   "ticker": "MDB",
+   "cik": "0001441816",
+   "sec_name": "MongoDB, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "MDB"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001441816.json"
+  },
+  {
+   "ticker": "DDOG",
+   "cik": "0001561550",
+   "sec_name": "Datadog, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "DDOG"
+   ],
+   "state_of_incorporation": "NV",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001561550.json"
+  },
+  {
+   "ticker": "CRM",
+   "cik": "0001108524",
+   "sec_name": "Salesforce, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CRM"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001108524.json"
+  },
+  {
+   "ticker": "NOW",
+   "cik": "0001373715",
+   "sec_name": "ServiceNow, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "NOW"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001373715.json"
+  },
+  {
+   "ticker": "ADBE",
+   "cik": "0000796343",
+   "sec_name": "ADOBE INC.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ADBE"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1127",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000796343.json"
+  },
+  {
+   "ticker": "WDAY",
+   "cik": "0001327811",
+   "sec_name": "Workday, Inc.",
+   "sic": "7374",
+   "sic_description": "Services-Computer Processing & Data Preparation",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "WDAY"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001327811.json"
+  },
+  {
+   "ticker": "INTU",
+   "cik": "0000896878",
+   "sec_name": "INTUIT INC.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "INTU"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0731",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000896878.json"
+  },
+  {
+   "ticker": "IBM",
+   "cik": "0000051143",
+   "sec_name": "INTERNATIONAL BUSINESS MACHINES CORP",
+   "sic": "3570",
+   "sic_description": "Computer & office Equipment",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "IBM"
+   ],
+   "state_of_incorporation": "NY",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000051143.json"
+  },
+  {
+   "ticker": "TEAM",
+   "cik": "0001650372",
+   "sec_name": "Atlassian Corp",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TEAM"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "0630",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001650372.json"
+  },
+  {
+   "ticker": "HUBS",
+   "cik": "0001404655",
+   "sec_name": "HUBSPOT INC",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "HUBS"
+   ],
+   "state_of_incorporation": "NY",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001404655.json"
+  },
+  {
+   "ticker": "ADSK",
+   "cik": "0000769397",
+   "sec_name": "Autodesk, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ADSK"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000769397.json"
+  },
+  {
+   "ticker": "GTLB",
+   "cik": "0001653482",
+   "sec_name": "Gitlab Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "GTLB"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001653482.json"
+  },
+  {
+   "ticker": "DUOL",
+   "cik": "0001562088",
+   "sec_name": "Duolingo, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "DUOL"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001562088.json"
+  },
+  {
+   "ticker": "NET",
+   "cik": "0001477333",
+   "sec_name": "Cloudflare, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "NET"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001477333.json"
+  },
+  {
+   "ticker": "CRWD",
+   "cik": "0001535527",
+   "sec_name": "CrowdStrike Holdings, Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CRWD"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001535527.json"
+  },
+  {
+   "ticker": "PANW",
+   "cik": "0001327567",
+   "sec_name": "Palo Alto Networks Inc",
+   "sic": "3577",
+   "sic_description": "Computer Peripheral Equipment, NEC",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "PANW"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0731",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001327567.json"
+  },
+  {
+   "ticker": "ZS",
+   "cik": "0001713683",
+   "sec_name": "Zscaler, Inc.",
+   "sic": "7371",
+   "sic_description": "Services-Computer Programming Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ZS"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0731",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001713683.json"
+  },
+  {
+   "ticker": "TWLO",
+   "cik": "0001447669",
+   "sec_name": "TWILIO INC",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "TWLO"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001447669.json"
+  },
+  {
+   "ticker": "DOCU",
+   "cik": "0001261333",
+   "sec_name": "DOCUSIGN, INC.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "DOCU"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001261333.json"
+  },
+  {
+   "ticker": "U",
+   "cik": "0001810806",
+   "sec_name": "Unity Software Inc.",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "U"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001810806.json"
+  },
+  {
+   "ticker": "AAPL",
+   "cik": "0000320193",
+   "sec_name": "Apple Inc.",
+   "sic": "3571",
+   "sic_description": "Electronic Computers",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AAPL"
+   ],
+   "state_of_incorporation": "CA",
+   "fiscal_year_end": "0925",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000320193.json"
+  },
+  {
+   "ticker": "TSLA",
+   "cik": "0001318605",
+   "sec_name": "Tesla, Inc.",
+   "sic": "3711",
+   "sic_description": "Motor Vehicles & Passenger Car Bodies",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TSLA"
+   ],
+   "state_of_incorporation": "TX",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001318605.json"
+  },
+  {
+   "ticker": "OWL",
+   "cik": "0001823945",
+   "sec_name": "BLUE OWL CAPITAL INC.",
+   "sic": "6282",
+   "sic_description": "Investment Advice",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "OWL"
+   ],
+   "state_of_incorporation": "NJ",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001823945.json"
+  },
+  {
+   "ticker": "BX",
+   "cik": "0001393818",
+   "sec_name": "Blackstone Inc.",
+   "sic": "6282",
+   "sic_description": "Investment Advice",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "BX"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001393818.json"
+  },
+  {
+   "ticker": "KKR",
+   "cik": "0001404912",
+   "sec_name": "KKR & Co. Inc.",
+   "sic": "6282",
+   "sic_description": "Investment Advice",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "KKR",
+    "KKR-PD",
+    "KKRS",
+    "KKRT"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001404912.json"
+  },
+  {
+   "ticker": "APO",
+   "cik": "0001858681",
+   "sec_name": "Apollo Global Management, Inc.",
+   "sic": "6282",
+   "sic_description": "Investment Advice",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "APO",
+    "APOS"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001858681.json"
+  },
+  {
+   "ticker": "ARES",
+   "cik": "0001176948",
+   "sec_name": "Ares Management Corp",
+   "sic": "6282",
+   "sic_description": "Investment Advice",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ARES",
+    "ARES-PB"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001176948.json"
+  },
+  {
+   "ticker": "BAM",
+   "cik": "0001937926",
+   "sec_name": "Brookfield Asset Management Ltd.",
+   "sic": "6282",
+   "sic_description": "Investment Advice",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "BAM"
+   ],
+   "state_of_incorporation": "A1",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001937926.json"
+  },
+  {
+   "ticker": "CG",
+   "cik": "0001527166",
+   "sec_name": "Carlyle Group Inc.",
+   "sic": "6282",
+   "sic_description": "Investment Advice",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CG",
+    "CGABL"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001527166.json"
+  },
+  {
+   "ticker": "TPG",
+   "cik": "0001880661",
+   "sec_name": "TPG Inc.",
+   "sic": "6282",
+   "sic_description": "Investment Advice",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TPG",
+    "TPGXL"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001880661.json"
+  },
+  {
+   "ticker": "ARCC",
+   "cik": "0001287750",
+   "sec_name": "ARES CAPITAL CORP",
+   "sic": "",
+   "sic_description": "",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ARCC"
+   ],
+   "state_of_incorporation": "MD",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001287750.json"
+  },
+  {
+   "ticker": "OBDC",
+   "cik": "0001655888",
+   "sec_name": "Blue Owl Capital Corp",
+   "sic": "",
+   "sic_description": "",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "OBDC"
+   ],
+   "state_of_incorporation": "MD",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001655888.json"
+  },
+  {
+   "ticker": "FSK",
+   "cik": "0001422183",
+   "sec_name": "FS KKR Capital Corp",
+   "sic": "",
+   "sic_description": "",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "FSK"
+   ],
+   "state_of_incorporation": "MD",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001422183.json"
+  },
+  {
+   "ticker": "BXSL",
+   "cik": "0001736035",
+   "sec_name": "Blackstone Secured Lending Fund",
+   "sic": "",
+   "sic_description": "",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "BXSL"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001736035.json"
+  },
+  {
+   "ticker": "JPM",
+   "cik": "0000019617",
+   "sec_name": "JPMORGAN CHASE & CO",
+   "sic": "6021",
+   "sic_description": "National Commercial Banks",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "JPM",
+    "JPM-PC",
+    "AMJB",
+    "JPM-PD",
+    "JPM-PJ",
+    "JPM-PK",
+    "JPM-PL",
+    "JPM-PM",
+    "VYLD"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000019617.json"
+  },
+  {
+   "ticker": "GS",
+   "cik": "0000886982",
+   "sec_name": "GOLDMAN SACHS GROUP INC",
+   "sic": "6211",
+   "sic_description": "Security Brokers, Dealers & Flotation Companies",
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "GS",
+    "GSCE",
+    "GS-PA",
+    "GS-PC",
+    "GS-PD"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000886982.json"
+  },
+  {
+   "ticker": "MS",
+   "cik": "0000895421",
+   "sec_name": "MORGAN STANLEY",
+   "sic": "6211",
+   "sic_description": "Security Brokers, Dealers & Flotation Companies",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "MS",
+    "MS-PK",
+    "MS-PE",
+    "MS-PA",
+    "MS-PF",
+    "MS-PI",
+    "MS-PL",
+    "MS-PO",
+    "MS-PP",
+    "MS-PQ"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000895421.json"
+  },
+  {
+   "ticker": "BAC",
+   "cik": "0000070858",
+   "sec_name": "BANK OF AMERICA CORP /DE/",
+   "sic": "6021",
+   "sic_description": "National Commercial Banks",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "OTC",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "BAC",
+    "BML-PG",
+    "BML-PL",
+    "BAC-PB",
+    "BAC-PK",
+    "BAC-PE",
+    "BAC-PL",
+    "BAC-PM",
+    "BAC-PN",
+    "BAC-PO",
+    "BAC-PP",
+    "BAC-PQ",
+    "BAC-PS",
+    "BACRP",
+    "BML-PH",
+    "BML-PJ",
+    "MER-PK"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000070858.json"
+  },
+  {
+   "ticker": "C",
+   "cik": "0000831001",
+   "sec_name": "CITIGROUP INC",
+   "sic": "6021",
+   "sic_description": "National Commercial Banks",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "C",
+    "C-PN",
+    "C-PR"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000831001.json"
+  },
+  {
+   "ticker": "WFC",
+   "cik": "0000072971",
+   "sec_name": "WELLS FARGO & COMPANY/MN",
+   "sic": "6021",
+   "sic_description": "National Commercial Banks",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "OTC",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "WFC",
+    "WFC-PY",
+    "WFC-PL",
+    "WFC-PC",
+    "WFCNP",
+    "WFC-PA",
+    "WFC-PD",
+    "WFC-PZ"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000072971.json"
+  },
+  {
+   "ticker": "TXN",
+   "cik": "0000097476",
+   "sec_name": "TEXAS INSTRUMENTS INC",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TXN"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000097476.json"
+  },
+  {
+   "ticker": "ADI",
+   "cik": "0000006281",
+   "sec_name": "ANALOG DEVICES INC",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ADI"
+   ],
+   "state_of_incorporation": "MA",
+   "fiscal_year_end": "1031",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000006281.json"
+  },
+  {
+   "ticker": "MCHP",
+   "cik": "0000827054",
+   "sec_name": "MICROCHIP TECHNOLOGY INC",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "MCHP",
+    "MCHPP"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0331",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000827054.json"
+  },
+  {
+   "ticker": "ON",
+   "cik": "0001097864",
+   "sec_name": "ON SEMICONDUCTOR CORP",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ON"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001097864.json"
+  },
+  {
+   "ticker": "NXPI",
+   "cik": "0001413447",
+   "sec_name": "NXP Semiconductors N.V.",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "NXPI"
+   ],
+   "state_of_incorporation": "",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001413447.json"
+  },
+  {
+   "ticker": "ACN",
+   "cik": "0001467373",
+   "sec_name": "Accenture plc",
+   "sic": "7389",
+   "sic_description": "Services-Business Services, NEC",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ACN"
+   ],
+   "state_of_incorporation": "L2",
+   "fiscal_year_end": "0831",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001467373.json"
+  },
+  {
+   "ticker": "ADP",
+   "cik": "0000008670",
+   "sec_name": "AUTOMATIC DATA PROCESSING INC",
+   "sic": "7374",
+   "sic_description": "Services-Computer Processing & Data Preparation",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ADP"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0630",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000008670.json"
+  },
+  {
+   "ticker": "PAYX",
+   "cik": "0000723531",
+   "sec_name": "PAYCHEX INC",
+   "sic": "8700",
+   "sic_description": "Services-Engineering, Accounting, Research, Management",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "PAYX"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0531",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000723531.json"
+  },
+  {
+   "ticker": "V",
+   "cik": "0001403161",
+   "sec_name": "VISA INC.",
+   "sic": "7389",
+   "sic_description": "Services-Business Services, NEC",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "V"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0930",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001403161.json"
+  },
+  {
+   "ticker": "MA",
+   "cik": "0001141391",
+   "sec_name": "Mastercard Inc",
+   "sic": "7389",
+   "sic_description": "Services-Business Services, NEC",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "MA"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001141391.json"
+  },
+  {
+   "ticker": "VRSN",
+   "cik": "0001014473",
+   "sec_name": "VERISIGN INC/CA",
+   "sic": "7371",
+   "sic_description": "Services-Computer Programming Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "VRSN"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001014473.json"
+  },
+  {
+   "ticker": "GDDY",
+   "cik": "0001609711",
+   "sec_name": "GoDaddy Inc.",
+   "sic": "7373",
+   "sic_description": "Services-Computer Integrated Systems Design",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "GDDY"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001609711.json"
+  },
+  {
+   "ticker": "TTWO",
+   "cik": "0000946581",
+   "sec_name": "TAKE TWO INTERACTIVE SOFTWARE INC",
+   "sic": "7372",
+   "sic_description": "Services-Prepackaged Software",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TTWO"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0331",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000946581.json"
+  },
+  {
+   "ticker": "NFLX",
+   "cik": "0001065280",
+   "sec_name": "NETFLIX INC",
+   "sic": "7841",
+   "sic_description": "Services-Video Tape Rental",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "NFLX"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001065280.json"
+  },
+  {
+   "ticker": "ROP",
+   "cik": "0000882835",
+   "sec_name": "ROPER TECHNOLOGIES INC",
+   "sic": "3823",
+   "sic_description": "Industrial Instruments For Measurement, Display, and Control",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "ROP"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000882835.json"
+  },
+  {
+   "ticker": "CDW",
+   "cik": "0001402057",
+   "sec_name": "CDW Corp",
+   "sic": "5961",
+   "sic_description": "Retail-Catalog & Mail-Order Houses",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CDW"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001402057.json"
+  },
+  {
+   "ticker": "GRMN",
+   "cik": "0001121788",
+   "sec_name": "GARMIN LTD",
+   "sic": "3812",
+   "sic_description": "Search, Detection, Navigation, Guidance, Aeronautical Sys",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "GRMN"
+   ],
+   "state_of_incorporation": "V8",
+   "fiscal_year_end": "1226",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001121788.json"
+  },
+  {
+   "ticker": "MSI",
+   "cik": "0000068505",
+   "sec_name": "Motorola Solutions, Inc.",
+   "sic": "3663",
+   "sic_description": "Radio & Tv Broadcasting & Communications Equipment",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "MSI"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000068505.json"
+  },
+  {
+   "ticker": "T",
+   "cik": "0000732717",
+   "sec_name": "AT&T INC.",
+   "sic": "4813",
+   "sic_description": "Telephone Communications (No Radiotelephone)",
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "T",
+    "TBB",
+    "T-PA",
+    "T-PC"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000732717.json"
+  },
+  {
+   "ticker": "VZ",
+   "cik": "0000732712",
+   "sec_name": "VERIZON COMMUNICATIONS INC",
+   "sic": "4813",
+   "sic_description": "Telephone Communications (No Radiotelephone)",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "VZ"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000732712.json"
+  },
+  {
+   "ticker": "TMUS",
+   "cik": "0001283699",
+   "sec_name": "T-Mobile US, Inc.",
+   "sic": "4812",
+   "sic_description": "Radiotelephone Communications",
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq",
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "TMUS",
+    "TMUSI",
+    "TMUSL",
+    "TMUSZ"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001283699.json"
+  },
+  {
+   "ticker": "CMCSA",
+   "cik": "0001166691",
+   "sec_name": "COMCAST CORP",
+   "sic": "4841",
+   "sic_description": "Cable & Other Pay Television Services",
+   "exchanges": [
+    "Nasdaq",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CMCSA",
+    "CCZ"
+   ],
+   "state_of_incorporation": "PA",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001166691.json"
+  },
+  {
+   "ticker": "DIS",
+   "cik": "0001744489",
+   "sec_name": "Walt Disney Co",
+   "sic": "7990",
+   "sic_description": "Services-Miscellaneous Amusement & Recreation",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "DIS"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1003",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001744489.json"
+  },
+  {
+   "ticker": "JNJ",
+   "cik": "0000200406",
+   "sec_name": "JOHNSON & JOHNSON",
+   "sic": "2834",
+   "sic_description": "Pharmaceutical Preparations",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "JNJ"
+   ],
+   "state_of_incorporation": "NJ",
+   "fiscal_year_end": "0103",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000200406.json"
+  },
+  {
+   "ticker": "LLY",
+   "cik": "0000059478",
+   "sec_name": "ELI LILLY & Co",
+   "sic": "2834",
+   "sic_description": "Pharmaceutical Preparations",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "LLY"
+   ],
+   "state_of_incorporation": "IN",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000059478.json"
+  },
+  {
+   "ticker": "MRK",
+   "cik": "0000310158",
+   "sec_name": "Merck & Co., Inc.",
+   "sic": "2834",
+   "sic_description": "Pharmaceutical Preparations",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "MRK"
+   ],
+   "state_of_incorporation": "NJ",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000310158.json"
+  },
+  {
+   "ticker": "ABBV",
+   "cik": "0001551152",
+   "sec_name": "AbbVie Inc.",
+   "sic": "2834",
+   "sic_description": "Pharmaceutical Preparations",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ABBV"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001551152.json"
+  },
+  {
+   "ticker": "UNH",
+   "cik": "0000731766",
+   "sec_name": "UNITEDHEALTH GROUP INC",
+   "sic": "6324",
+   "sic_description": "Hospital & Medical Service Plans",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "UNH"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000731766.json"
+  },
+  {
+   "ticker": "AMGN",
+   "cik": "0000318154",
+   "sec_name": "AMGEN INC",
+   "sic": "2836",
+   "sic_description": "Biological Products, (No Diagnostic Substances)",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "AMGN"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000318154.json"
+  },
+  {
+   "ticker": "TMO",
+   "cik": "0000097745",
+   "sec_name": "THERMO FISHER SCIENTIFIC INC.",
+   "sic": "3829",
+   "sic_description": "Measuring & Controlling Devices, NEC",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "TMO"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000097745.json"
+  },
+  {
+   "ticker": "ABT",
+   "cik": "0000001800",
+   "sec_name": "ABBOTT LABORATORIES",
+   "sic": "2834",
+   "sic_description": "Pharmaceutical Preparations",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ABT"
+   ],
+   "state_of_incorporation": "IL",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000001800.json"
+  },
+  {
+   "ticker": "PG",
+   "cik": "0000080424",
+   "sec_name": "PROCTER & GAMBLE Co",
+   "sic": "2840",
+   "sic_description": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "PG"
+   ],
+   "state_of_incorporation": "OH",
+   "fiscal_year_end": "0630",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000080424.json"
+  },
+  {
+   "ticker": "KO",
+   "cik": "0000021344",
+   "sec_name": "COCA COLA CO",
+   "sic": "2080",
+   "sic_description": "Beverages",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "KO"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000021344.json"
+  },
+  {
+   "ticker": "PEP",
+   "cik": "0000077476",
+   "sec_name": "PEPSICO INC",
+   "sic": "2080",
+   "sic_description": "Beverages",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "PEP"
+   ],
+   "state_of_incorporation": "NC",
+   "fiscal_year_end": "1226",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000077476.json"
+  },
+  {
+   "ticker": "WMT",
+   "cik": "0000104169",
+   "sec_name": "Walmart Inc.",
+   "sic": "5331",
+   "sic_description": "Retail-Variety Stores",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "WMT"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000104169.json"
+  },
+  {
+   "ticker": "COST",
+   "cik": "0000909832",
+   "sec_name": "COSTCO WHOLESALE CORP /NEW",
+   "sic": "5331",
+   "sic_description": "Retail-Variety Stores",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "COST"
+   ],
+   "state_of_incorporation": "WA",
+   "fiscal_year_end": "0830",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000909832.json"
+  },
+  {
+   "ticker": "PM",
+   "cik": "0001413329",
+   "sec_name": "Philip Morris International Inc.",
+   "sic": "2111",
+   "sic_description": "Cigarettes",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "PM"
+   ],
+   "state_of_incorporation": "VA",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001413329.json"
+  },
+  {
+   "ticker": "MDLZ",
+   "cik": "0001103982",
+   "sec_name": "Mondelez International, Inc.",
+   "sic": "2000",
+   "sic_description": "Food and Kindred Products",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "MDLZ"
+   ],
+   "state_of_incorporation": "IL",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001103982.json"
+  },
+  {
+   "ticker": "CL",
+   "cik": "0000021665",
+   "sec_name": "COLGATE PALMOLIVE CO",
+   "sic": "2844",
+   "sic_description": "Perfumes, Cosmetics & Other Toilet Preparations",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CL"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000021665.json"
+  },
+  {
+   "ticker": "HD",
+   "cik": "0000354950",
+   "sec_name": "HOME DEPOT, INC.",
+   "sic": "5211",
+   "sic_description": "Retail-Lumber & Other Building Materials Dealers",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "HD"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000354950.json"
+  },
+  {
+   "ticker": "MCD",
+   "cik": "0000063908",
+   "sec_name": "MCDONALDS CORP",
+   "sic": "5812",
+   "sic_description": "Retail-Eating  Places",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "MCD"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000063908.json"
+  },
+  {
+   "ticker": "NKE",
+   "cik": "0000320187",
+   "sec_name": "NIKE, Inc.",
+   "sic": "3021",
+   "sic_description": "Rubber & Plastics Footwear",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "NKE"
+   ],
+   "state_of_incorporation": "OR",
+   "fiscal_year_end": "0531",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000320187.json"
+  },
+  {
+   "ticker": "SBUX",
+   "cik": "0000829224",
+   "sec_name": "STARBUCKS CORP",
+   "sic": "5810",
+   "sic_description": "Retail-Eating & Drinking Places",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "SBUX"
+   ],
+   "state_of_incorporation": "WA",
+   "fiscal_year_end": "0928",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000829224.json"
+  },
+  {
+   "ticker": "LOW",
+   "cik": "0000060667",
+   "sec_name": "LOWES COMPANIES INC",
+   "sic": "5211",
+   "sic_description": "Retail-Lumber & Other Building Materials Dealers",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "LOW"
+   ],
+   "state_of_incorporation": "NC",
+   "fiscal_year_end": "0131",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000060667.json"
+  },
+  {
+   "ticker": "TJX",
+   "cik": "0000109198",
+   "sec_name": "TJX COMPANIES INC /DE/",
+   "sic": "5651",
+   "sic_description": "Retail-Family Clothing Stores",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "TJX"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "0201",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000109198.json"
+  },
+  {
+   "ticker": "XOM",
+   "cik": "0002115436",
+   "sec_name": "ExxonMobil Holdings Corp",
+   "sic": "2911",
+   "sic_description": "Petroleum Refining",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "XOM"
+   ],
+   "state_of_incorporation": "TX",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0002115436.json"
+  },
+  {
+   "ticker": "CVX",
+   "cik": "0000093410",
+   "sec_name": "CHEVRON CORP",
+   "sic": "2911",
+   "sic_description": "Petroleum Refining",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CVX"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000093410.json"
+  },
+  {
+   "ticker": "COP",
+   "cik": "0001163165",
+   "sec_name": "CONOCOPHILLIPS",
+   "sic": "2911",
+   "sic_description": "Petroleum Refining",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "COP"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001163165.json"
+  },
+  {
+   "ticker": "BRK-B",
+   "cik": "0001067983",
+   "sec_name": "BERKSHIRE HATHAWAY INC",
+   "sic": "6331",
+   "sic_description": "Fire, Marine & Casualty Insurance",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "BRK-B",
+    "BRK-A"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001067983.json"
+  },
+  {
+   "ticker": "PGR",
+   "cik": "0000080661",
+   "sec_name": "PROGRESSIVE CORP/OH/",
+   "sic": "6331",
+   "sic_description": "Fire, Marine & Casualty Insurance",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "PGR"
+   ],
+   "state_of_incorporation": "OH",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000080661.json"
+  },
+  {
+   "ticker": "CB",
+   "cik": "0000896159",
+   "sec_name": "Chubb Ltd",
+   "sic": "6331",
+   "sic_description": "Fire, Marine & Casualty Insurance",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "CB"
+   ],
+   "state_of_incorporation": "V8",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000896159.json"
+  },
+  {
+   "ticker": "SPGI",
+   "cik": "0000064040",
+   "sec_name": "S&P Global Inc.",
+   "sic": "7320",
+   "sic_description": "Services-Consumer Credit Reporting, Collection Agencies",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "SPGI"
+   ],
+   "state_of_incorporation": "NY",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000064040.json"
+  },
+  {
+   "ticker": "CME",
+   "cik": "0001156375",
+   "sec_name": "CME GROUP INC.",
+   "sic": "6200",
+   "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CME"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001156375.json"
+  },
+  {
+   "ticker": "ICE",
+   "cik": "0001571949",
+   "sec_name": "Intercontinental Exchange, Inc.",
+   "sic": "6200",
+   "sic_description": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "ICE"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001571949.json"
+  },
+  {
+   "ticker": "UNP",
+   "cik": "0000100885",
+   "sec_name": "UNION PACIFIC CORP",
+   "sic": "4011",
+   "sic_description": "Railroads, Line-Haul Operating",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "UNP"
+   ],
+   "state_of_incorporation": "UT",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000100885.json"
+  },
+  {
+   "ticker": "UPS",
+   "cik": "0001090727",
+   "sec_name": "UNITED PARCEL SERVICE INC",
+   "sic": "4210",
+   "sic_description": "Trucking & Courier Services (No Air)",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "UPS"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001090727.json"
+  },
+  {
+   "ticker": "HON",
+   "cik": "0000773840",
+   "sec_name": "HONEYWELL INTERNATIONAL INC",
+   "sic": "3724",
+   "sic_description": "Aircraft Engines & Engine Parts",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "HON"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000773840.json"
+  },
+  {
+   "ticker": "LMT",
+   "cik": "0000936468",
+   "sec_name": "LOCKHEED MARTIN CORP",
+   "sic": "3760",
+   "sic_description": "Guided Missiles & Space Vehicles & Parts",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "LMT"
+   ],
+   "state_of_incorporation": "MD",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000936468.json"
+  },
+  {
+   "ticker": "RTX",
+   "cik": "0000101829",
+   "sec_name": "RTX Corp",
+   "sic": "3724",
+   "sic_description": "Aircraft Engines & Engine Parts",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "RTX"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000101829.json"
+  },
+  {
+   "ticker": "GD",
+   "cik": "0000040533",
+   "sec_name": "GENERAL DYNAMICS CORP",
+   "sic": "3730",
+   "sic_description": "Ship & Boat Building & Repairing",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "GD"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000040533.json"
+  },
+  {
+   "ticker": "DE",
+   "cik": "0000315189",
+   "sec_name": "DEERE & CO",
+   "sic": "3523",
+   "sic_description": "Farm Machinery & Equipment",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "DE"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1101",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000315189.json"
+  },
+  {
+   "ticker": "BA",
+   "cik": "0000012927",
+   "sec_name": "BOEING CO",
+   "sic": "3721",
+   "sic_description": "Aircraft",
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "BA",
+    "BA-PA"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000012927.json"
+  },
+  {
+   "ticker": "WM",
+   "cik": "0000823768",
+   "sec_name": "WASTE MANAGEMENT INC",
+   "sic": "4953",
+   "sic_description": "Refuse Systems",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "WM"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000823768.json"
+  },
+  {
+   "ticker": "CSX",
+   "cik": "0000277948",
+   "sec_name": "CSX CORP",
+   "sic": "4011",
+   "sic_description": "Railroads, Line-Haul Operating",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CSX"
+   ],
+   "state_of_incorporation": "VA",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000277948.json"
+  },
+  {
+   "ticker": "LIN",
+   "cik": "0001707925",
+   "sec_name": "LINDE PLC",
+   "sic": "2810",
+   "sic_description": "Industrial Inorganic Chemicals",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "LIN"
+   ],
+   "state_of_incorporation": "L2",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001707925.json"
+  },
+  {
+   "ticker": "SHW",
+   "cik": "0000089800",
+   "sec_name": "SHERWIN WILLIAMS CO",
+   "sic": "5200",
+   "sic_description": "Retail-Building Materials, Hardware, Garden Supply",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "SHW"
+   ],
+   "state_of_incorporation": "OH",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000089800.json"
+  },
+  {
+   "ticker": "PLD",
+   "cik": "0001045609",
+   "sec_name": "Prologis, Inc.",
+   "sic": "6798",
+   "sic_description": "Real Estate Investment Trusts",
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "sec_tickers": [
+    "PLD",
+    "PLDGP"
+   ],
+   "state_of_incorporation": "MD",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001045609.json"
+  },
+  {
+   "ticker": "AMT",
+   "cik": "0001053507",
+   "sec_name": "AMERICAN TOWER CORP /MA/",
+   "sic": "6798",
+   "sic_description": "Real Estate Investment Trusts",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "AMT"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0001053507.json"
+  },
+  {
+   "ticker": "O",
+   "cik": "0000726728",
+   "sec_name": "REALTY INCOME CORP",
+   "sic": "6798",
+   "sic_description": "Real Estate Investment Trusts",
+   "exchanges": [
+    "NYSE"
+   ],
+   "sec_tickers": [
+    "O"
+   ],
+   "state_of_incorporation": "MD",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0000726728.json"
+  },
+  {
+   "ticker": "CBRS",
+   "cik": "0002021728",
+   "sec_name": "Cerebras Systems Inc.",
+   "sic": "3674",
+   "sic_description": "Semiconductors & Related Devices",
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "sec_tickers": [
+    "CBRS"
+   ],
+   "state_of_incorporation": "DE",
+   "fiscal_year_end": "1231",
+   "entity_type": "operating",
+   "has_companyfacts": true,
+   "submissions_url": "https://data.sec.gov/submissions/CIK0002021728.json"
+  }
+ ],
+ "unresolved": [
+  "DBRG",
+  "SFTBY",
+  "EA",
+  "SPCX",
+  "SKHY"
+ ]
+}

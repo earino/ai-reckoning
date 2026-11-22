@@ -176,10 +176,14 @@ th, td { text-align: left; padding: 0.32rem 0.5rem; border-bottom: 1px solid var
   .hero h1, .hero .dek { text-shadow: none; }
   h1 { font-size: clamp(2rem, 8.6vw, 2.6rem); }
   .scroll-cue { margin-top: 0.8rem; }
-  .chapter-head, .chapter-head.card { margin: 22vh 0.75rem 1rem; }
-  .step, .step.tall { display: block; min-height: 0; padding: 0 0.75rem; margin-bottom: 38vh; }
-  .step.tall { min-height: 60vh; }
-  #epilogue { padding-top: var(--band); scroll-margin-top: 0; } /* the section before it covers the scene band until it has scrolled away */
+  /* the text is one continuous article; the scene stays in the band above it, so there are no empty gaps between cards */
+  .chapter-head, .chapter-head.card { margin: 2.2rem 0.75rem 0.75rem; }
+  .step, .step.tall { display: block; min-height: 0; padding: 0 0.75rem; margin-bottom: 0.75rem; }
+  section:not(.solid) > .step:last-child { margin-bottom: 2.5rem; }
+  /* the explorer card stays below the band while the section before it scrolls off the scene */
+  .step.tall { min-height: calc(var(--band) + 75vh); }
+  .step.tall > .card { position: sticky; top: calc(var(--band) + 0.6rem); }
+  #epilogue { scroll-margin-top: 0; } /* a link to the explorer must land after the section before it has left the scene band */ /* the section before it covers the scene band until it has scrolled away */
   .card { width: 100%; background: var(--char); backdrop-filter: none; box-shadow: none; padding: 1rem 1rem 0.6rem; }
   .lede { font-size: 1.08rem; }
 
@@ -211,8 +215,9 @@ th, td { text-align: left; padding: 0.32rem 0.5rem; border-bottom: 1px solid var
   .viewbar { top: calc(var(--nav) + 0.4rem); bottom: auto; right: 0.5rem; z-index: 5; }
   .viewbar button { min-height: 2.4rem; min-width: 2.4rem; }
   .gesture-hint { top: auto; bottom: 3.4rem; max-width: calc(100vw - 1rem); }
-  .story.is-expanded { --band: 100vh; --sheet: 52vh; }
-  @supports (height: 1dvh) { .story.is-expanded { --band: 100dvh; --sheet: 52dvh; } }
+  /* only the key and the controls move; the article layout below must not change, or the active step would change */
+  .story.is-expanded .hud, .story.is-expanded .dock { --band: 100vh; --sheet: 52vh; }
+  @supports (height: 1dvh) { .story.is-expanded .hud, .story.is-expanded .dock { --band: 100dvh; --sheet: 52dvh; } }
   .story.is-expanded .viewbar { top: 0.5rem; }
   .story.is-expanded .hud-toggle, .story.is-expanded .dock { z-index: 65; }
   .story.is-expanded .hud.open .hud-toggle, .story.is-expanded .hud-body, .story.is-expanded .dock[open] { z-index: 70; }

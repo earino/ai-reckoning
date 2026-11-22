@@ -17,7 +17,7 @@ async function open(page: Page, path = "") {
 // enters the text area below the scene band, and the reader then reads it just below the band.
 async function toStep(page: Page, id: string) {
   const narrow = (page.viewportSize()?.width ?? 1440) <= 820;
-  for (const frac of narrow ? [0.86, 0.5] : [null]) {
+  for (const frac of narrow ? [0.58, 0.5] : [null]) {
     await page.evaluate(([sid, f]) => {
       const els = [...document.querySelectorAll<HTMLElement>(`[data-step="${sid}"]`)]; const el = els[els.length - 1]; const r = el.getBoundingClientRect();
       window.scrollTo({ top: f == null ? window.scrollY + r.top + Math.min(r.height / 2, 400) - window.innerHeight / 2 : window.scrollY + r.top - window.innerHeight * (f as number), behavior: "instant" });

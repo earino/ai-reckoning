@@ -116,9 +116,9 @@ export default function Story({ d }: { d: DataBundle }) {
         const el = en.target as HTMLElement; setActiveId(el.dataset.step!); setSolid(el.dataset.solid === "1");
         const ch = el.closest("section[id]")?.id; if (ch && !window.location.hash.startsWith("#/")) history.replaceState(null, "", `${window.location.pathname}${window.location.search}#${ch}`);
       }
-      // wide screens: the step at the middle of the screen is active. Narrow screens: the scene has the top band,
-      // so a step becomes active when its card comes into the text area below the band.
-    }, { rootMargin: mobile ? "-84% 0px -11% 0px" : "-45% 0px -45% 0px", threshold: 0 });
+      // wide screens: the step at the middle of the screen is active. Narrow screens: the scene has the top band and
+      // the text is continuous, so the active step is the card at a line a short distance below the band.
+    }, { rootMargin: mobile ? "-60% 0px -39% 0px" : "-45% 0px -45% 0px", threshold: 0 });
     els.forEach((e) => io.observe(e)); return () => io.disconnect();
   }, [chs, mobile]);
   // deep links: #chapter-id, ?select=TICKER, ?view=network (opens the explorer)

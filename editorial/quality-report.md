@@ -66,3 +66,8 @@ A reader review found two display defects. No data, analysis or text changed.
 - **Camera.** Drag rotates in every chapter (before, only in some). Zoom in, zoom out and reset buttons are on every 3D view. Pinch on a trackpad or Ctrl + wheel zooms; a plain wheel still scrolls the page. In the expanded view the wheel or a pinch zooms, and right-drag or two fingers pans.
 - **Touch screens.** In the story, a drag scrolls the page, so the camera moves only in the expanded view. This is deliberate.
 - Tests cover drag rotation, zoom, reset and the expanded view on both profiles. Touch gestures (pinch, two-finger pan) are provided by the three.js orbit controls and were not exercised by an automated test or on a physical phone.
+
+### Third revision, same day: continuous text on narrow screens
+
+- The empty space between text cards on narrow screens was removed. That space is useful on wide screens, where it shows the scene between cards; on a phone the scene is already fixed above the text. The text is now one continuous article, and the scene changes when a card reaches a line a short distance below the scene band.
+- The explorer card stays below the band while the section before it scrolls off the scene.

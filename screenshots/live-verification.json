@@ -1,6 +1,6 @@
 {
  "url": "https://earino.github.io/ai-reckoning/",
- "checked_utc": "2026-11-22T00:28:21.114Z",
+ "checked_utc": "2026-11-22T11:19:05.802Z",
  "checks": {
   "http_200": {
    "pass": true,
@@ -12,7 +12,7 @@
   },
   "css_js_paths": {
    "pass": true,
-   "detail": "200 index-CTBOurHP.js; 200 rolldown-runtime-XKyaHtl9.js; 200 three-C8BvJ-uX.js; 200 index-C9K_gqsk.css"
+   "detail": "200 index-eOkYHS5o.js; 200 rolldown-runtime-XKyaHtl9.js; 200 three-C8BvJ-uX.js; 200 index-CbLplQDV.css"
   },
   "desktop_homepage": {
    "pass": true,
@@ -57,6 +57,10 @@
   "mobile_homepage": {
    "pass": true,
    "detail": ""
+  },
+  "mobile_split_layout": {
+   "pass": true,
+   "detail": "band bottom 386, headline top 430"
   },
   "mobile_chapter_transition": {
    "pass": true,

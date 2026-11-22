@@ -272,3 +272,53 @@ test("narrow screens: the menu gives all site links", async ({ page, isMobile })
   await expect(page.locator("#site-links a:visible")).toHaveCount(0);
   await expect(page).toHaveURL(/#epilogue/);
 });
+
+const bandLabel = (page: Page) => page.evaluate(() => { const l = [...document.querySelectorAll<HTMLElement>(".label-layer .axis-label")].find((e) => e.style.visibility === "visible"); return l ? l.style.transform : ""; });
+
+test("camera: drag rotates, the buttons zoom and reset, in a chapter that was fixed before", async ({ page, isMobile }) => {
+  test.skip(!!isMobile, "pointer test; touch screens use the expanded view");
+  await open(page);
+  await toStep(page, "peak");
+  await page.waitForTimeout(2500);
+  const start = await bandLabel(page);
+  await page.mouse.move(1000, 500); await page.mouse.down(); await page.mouse.move(1120, 520, { steps: 8 }); await page.mouse.up();
+  await page.waitForTimeout(400);
+  const rotated = await bandLabel(page);
+  expect(rotated).not.toBe(start);
+  await page.getByRole("button", { name: "Zoom in" }).click();
+  await page.waitForTimeout(300);
+  expect(await bandLabel(page)).not.toBe(rotated);
+  await page.getByRole("button", { name: "Reset the view" }).click();
+  await page.waitForTimeout(3500);
+  const px = (s: string) => (s.match(/-?[\d.]+px/g) ?? []).slice(-2).map(parseFloat);
+  const [a, b] = [px(start), px(await bandLabel(page))];
+  expect(Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1])).toBeLessThan(6);
+});
+
+test("expanded view: the scene fills the screen with key, controls and camera tools, then closes", async ({ page, isMobile }) => {
+  const errors = watchErrors(page);
+  await open(page);
+  await toStep(page, "network");
+  await page.waitForTimeout(1500);
+  const vp = page.viewportSize()!;
+  await page.locator(".viewbar .expand").click();
+  await page.waitForTimeout(600);
+  const box = (await page.locator(".stage").boundingBox())!;
+  expect(box.width).toBeGreaterThanOrEqual(vp.width - 1); expect(box.height).toBeGreaterThanOrEqual(vp.height - 1);
+  await expect(page.getByRole("button", { name: "Zoom in" })).toBeVisible();
+  const before = await bandLabel(page);
+  await page.getByRole("button", { name: "Zoom out" }).click();
+  await page.waitForTimeout(300);
+  expect(await bandLabel(page)).not.toBe(before);
+  if (isMobile) { await page.getByRole("button", { name: /Key: what am I/ }).click(); await expect(page.locator(".hud-body")).toBeInViewport(); await page.locator(".hud-toggle").click(); await page.locator(".dock > summary").click(); }
+  await expect(page.getByLabel("Find a company")).toBeInViewport();
+  await page.getByLabel("Find a company").fill("NVDA — Nvidia");
+  await expect(page.locator(".company-panel")).toBeVisible();
+  await page.locator(".company-panel .close").click();
+  if (isMobile) await page.locator(".dock > summary").click();
+  await page.locator(".viewbar .expand").click();
+  await page.waitForTimeout(500);
+  expect((await page.locator(".stage").boundingBox())!.height).toBeLessThanOrEqual(isMobile ? vp.height * 0.5 : vp.height);
+  await expect(page.locator(".story.is-expanded")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});

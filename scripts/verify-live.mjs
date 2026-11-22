@@ -36,6 +36,12 @@ for (const mode of ["desktop", "mobile"]) {
   const links = await page.locator(".company-panel .edge-src a").evaluateAll((as) => as.map((a) => a.href));
   ok(`${mode}_interactive_selection`, (await page.locator(".company-panel h3").innerText()).includes("Nvidia") && links.length > 5, `${links.length} source links`); await shot("04-selection");
   await page.keyboard.press("Escape"); if (mode === "mobile") { await page.locator(".company-panel .close").click({ timeout: 1500 }).catch(() => {}); await page.locator(".dock[open] > summary").click({ timeout: 1500 }).catch(() => {}); }
+  await page.locator(".viewbar .expand").click(); await page.waitForTimeout(2500);
+  { const b = await page.locator(".stage").boundingBox(); const v = page.viewportSize(); const l0 = await page.evaluate(() => [...document.querySelectorAll(".label-layer .axis-label")].find((e) => e.style.visibility === "visible")?.style.transform);
+    await page.getByRole("button", { name: "Zoom in" }).click(); await page.waitForTimeout(400);
+    const l1 = await page.evaluate(() => [...document.querySelectorAll(".label-layer .axis-label")].find((e) => e.style.visibility === "visible")?.style.transform);
+    ok(`${mode}_expanded_view_and_zoom`, b.width >= v.width - 1 && b.height >= v.height - 1 && l0 !== l1, `${Math.round(b.width)}x${Math.round(b.height)}`); await shot("13-expanded"); }
+  await page.locator(".viewbar .expand").click(); await page.waitForTimeout(500);
   await to("hubs"); await shot("05-hubs"); await to("landscape-adjusted"); await shot("06-landscape"); await to("verdict"); await shot("07-verdict");
   await to("observatory", 1200); await shot("08-observatory"); await to("simulator", 1200); await shot("09-simulator"); await to("findings", 1200); await shot("10-findings"); await to("explore"); await shot("11-explore");
   ok(`${mode}_no_horizontal_scroll`, await page.evaluate(() => document.scrollingElement.scrollWidth <= innerWidth + 1));

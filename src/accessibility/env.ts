@@ -17,5 +17,5 @@ export function useMedia(query: string): boolean {
   return m;
 }
 export const useReducedMotion = () => useMedia("(prefers-reduced-motion: reduce)");
-export const useIsMobile = () => useMedia("(max-width: 820px)");
+export const useIsMobile = () => useMedia("(max-width: 820px), (max-height: 500px)");
 export const useCoarsePointer = () => useMedia("(pointer: coarse)");

@@ -14,6 +14,7 @@ import Observatory, { MODEL_LABEL, WINDOW_LABEL } from "../visualizations/Observ
 import Simulator from "../visualizations/Simulator";
 
 const World = lazy(() => import("../scenes/World"));
+type RigApi = import("../scenes/World").RigApi;
 const ALL_TYPES = Object.keys(EDGE_TYPE_LABEL); const ALL_STATUS = Object.keys(STATUS_LABEL);
 const VIEW_LABEL: Record<ViewKey, string> = { field: "Field", repricing: "The repricing", layers: "Layers", network: "Capital network", landscape: "Financial landscape", verdict: "Beta verdict" };
 
@@ -101,6 +102,9 @@ export default function Story({ d }: { d: DataBundle }) {
   const [roleFilter, setRoleFilter] = useState<Set<Role>>(new Set<Role>([...AI_ROLES, "control_tech", "control_other", "other"]));
   const [hudOpen, setHudOpen] = useState(!mobile);
   const [dockOpen, setDockOpen] = useState(!mobile);
+  const [expanded, setExpanded] = useState(false); // the scene alone, on the whole screen, with rotate, zoom and pan
+  const rig = useRef<RigApi | null>(null);
+  useEffect(() => { document.documentElement.style.overflow = expanded ? "hidden" : ""; if (!expanded && mobile) { setHudOpen(false); setDockOpen(false); } return () => { document.documentElement.style.overflow = ""; }; }, [expanded, mobile]);
   const step = activeId === "explore" ? explorer : activeId === "hero" ? hero : steps.find((s) => s.id === activeId) ?? steps[0];
   const dates = d.prices.dates; const peakIdx = dates.indexOf(d.prices.peak_date); const lastIdx = dates.length - 1;
 
@@ -135,7 +139,7 @@ export default function Story({ d }: { d: DataBundle }) {
     const t = setInterval(() => setOv((o) => { const i = (o.dateIndex ?? peakIdx) + 1; if (i >= lastIdx) { setPlaying(false); return { ...o, dateIndex: lastIdx }; } return { ...o, dateIndex: i }; }), 260);
     return () => clearInterval(t);
   }, [playing, lastIdx, peakIdx]);
-  useEffect(() => { const h = (e: KeyboardEvent) => { if (e.key === "Escape") setSelectedId(null); }; window.addEventListener("keydown", h); return () => window.removeEventListener("keydown", h); }, []);
+  useEffect(() => { const h = (e: KeyboardEvent) => { if (e.key === "Escape") { setSelectedId((s) => { if (s == null) setExpanded(false); return null; }); } }; window.addEventListener("keydown", h); return () => window.removeEventListener("keydown", h); }, []);
 
   const view = ov.view ?? step.view;
   const opts: LayoutOpts = useMemo(() => ({ dateIndex: ov.dateIndex ?? (step.date === "peak" ? peakIdx : lastIdx), window: ov.window ?? step.window ?? "week", model: ov.model ?? step.model ?? "raw", absolute: ov.absolute ?? false }),
@@ -157,7 +161,7 @@ export default function Story({ d }: { d: DataBundle }) {
   const cameraKey = ov.view && ov.view !== step.view ? ({ field: "field", repricing: "repricingWide", layers: "layers", network: "network", landscape: "landscape", verdict: "verdict" } as const)[ov.view] : step.camera;
   const camera = useMemo(() => cameraFor(cameraKey, mobile), [cameraKey, mobile]);
   const labels = ov.view && ov.view !== step.view ? [] : step.labels ?? [];
-  const interactive = !!step.interactive && !coarse;
+  const interactive = expanded || !coarse; // touch screens: a drag scrolls the page, so the camera moves only in the expanded view
   const vd = d.n.vd[opts.window];
   const useFlat = !webgl || !!ov.flat;
   const toggle = (set: Set<string>, k: string, f: (s: Set<string>) => void) => { const s = new Set(set); s.has(k) ? s.delete(k) : s.add(k); f(s); };
@@ -169,15 +173,27 @@ export default function Story({ d }: { d: DataBundle }) {
 
   const stageProps = { d, entities, view, opts, selectedId, onSelect: setSelectedId, labels, focus, edgeFilter, roleFilter };
   return (
-    <div className={`story ${solid ? "is-solid" : ""}`}>
+    <div className={`story ${solid ? "is-solid" : ""} ${expanded ? "is-expanded" : ""}`}>
       <div className="stage" aria-hidden={solid}>
         {useFlat ? <div className="flat-stage"><FlatStage {...stageProps} />{!webgl && <p className="fallback-note">Your browser is not showing 3D graphics, so this is the flat version of each view. Nothing is missing: the same data, axes and selections are available.</p>}</div>
           : <Suspense fallback={<div className="stage-loading">Loading the 3D scene…</div>}>
-              <World entities={entities} edges={d.graph.edges} view={view} opts={opts} camera={camera} interactive={interactive} selectedId={selectedId} onSelect={setSelectedId} labels={labels} focus={focus}
+              <World entities={entities} edges={d.graph.edges} view={view} opts={opts} camera={camera} interactive={interactive} expanded={expanded} rig={rig} selectedId={selectedId} onSelect={(id) => { if (id == null && mobile && !expanded && !selectedId) setExpanded(true); else setSelectedId(id); }} labels={labels} focus={focus}
                 colorMode={colorMode} edgeFilter={edgeFilter} roleFilter={roleFilter} reducedMotion={reducedMotion} mobile={mobile} paused={solid} quiet={activeId === "hero" && !mobile}
                 dateLabel={dateLong(dates[opts.dateIndex])} marketReturn={vd?.market ?? null} fit={vd ? { intercept: vd.intercept, slope: vd.slope } : null} />
             </Suspense>}
       </div>
+
+      {!solid && (
+        <div className="viewbar" role="group" aria-label="3D view">
+          {!useFlat && (expanded || !coarse) && <>
+            <button aria-label="Zoom in" title="Zoom in" onClick={() => rig.current?.zoom(0.8)}>+</button>
+            <button aria-label="Zoom out" title="Zoom out" onClick={() => rig.current?.zoom(1.25)}>−</button>
+            <button aria-label="Reset the view" title="Reset the view" onClick={() => rig.current?.reset()}>↺</button>
+          </>}
+          <button className="expand" aria-label={expanded ? "Close the full-screen view" : "Expand the 3D view to the full screen"} onClick={() => setExpanded(!expanded)}>{expanded ? "✕ Close" : mobile ? "⤢ Expand" : "⤢ Full screen"}</button>
+        </div>
+      )}
+      {expanded && !useFlat && <p className="gesture-hint" aria-hidden="true">{coarse ? "Drag to rotate · pinch to zoom · two fingers to move" : "Drag to rotate · wheel to zoom · right-drag to move"}<span className="turn"> · turn the phone sideways for a wider view</span></p>}
 
       {!solid && (
         <aside className={`hud ${hudOpen ? "open" : ""}`} aria-label="What you are looking at">
@@ -267,7 +283,7 @@ export default function Story({ d }: { d: DataBundle }) {
         <section id="epilogue" aria-labelledby="ep-h">
           <div className="step tall" data-step="explore"><div className="card"><p className="kicker">Epilogue</p><h2 id="ep-h">Explore the system</h2>
             <p>This is the research instrument behind the story. Choose a view, filter the relationships, switch between raw and adjusted returns, and select any company to see its numbers and sources.</p>
-            <p className="small">{coarse ? "On touch screens the camera is fixed so that the page always scrolls. Use the 2D view for precise reading." : "Drag to rotate. The page still scrolls with the wheel."} Link to a selection with <code>?select=NVDA&view=network</code>.</p></div></div>
+            <p className="small">{coarse ? "Tap Expand, or tap the scene, to fill the screen. There you can drag to rotate, pinch to zoom, and tap a company." : "Drag to rotate. Pinch or Ctrl + wheel to zoom; a plain wheel scrolls the page. Full screen gives the scene the whole window."} Link to a selection with <code>?select=NVDA&view=network</code>.</p></div></div>
         </section>
         <footer className="site-footer solid">
           <div className="inner">

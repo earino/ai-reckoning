@@ -8,7 +8,7 @@ Measured on 22 November 2026. Raw outputs are in `screenshots/` (`live-verificat
 |---|---|---|
 | Data and analysis | pytest (`tests/research`) | 26 passed |
 | Application logic | Vitest (`tests/unit`) | 13 passed |
-| Browser end-to-end, desktop and mobile emulation | Playwright (`tests/e2e`) | 29 passed, 3 skipped (hardware-keyboard test on mobile; two narrow-layout tests on desktop) |
+| Browser end-to-end, desktop and mobile emulation | Playwright (`tests/e2e`) | 32 passed, 4 skipped (hardware-keyboard and mouse-drag tests on mobile; two narrow-layout tests on desktop) |
 | Accessibility | axe-core in Playwright, WCAG 2.0/2.1/2.2 A and AA rules | 0 critical or serious violations on 6 page states, both sizes |
 | Static analysis | TypeScript strict mode | 0 errors |
 | Build checks | `scripts/check-data.mjs` | assets resolve, data headers complete, no local paths or credentials |
@@ -59,3 +59,10 @@ A reader review found two display defects. No data, analysis or text changed.
 - **First screen, wide displays.** The 3D scene was drawn behind the introduction and made it hard to read. The scene now sits beside the text, the text has an opaque side, and the column labels are hidden until the first scroll step. A test checks that nothing is drawn behind the headline and introduction.
 - **Narrow displays (820 px and less).** Text cards, the key and the controls were stacked on top of the scene. The scene now has a fixed band in the top 46% of the screen and the text scrolls below it on an opaque background. The key and the controls are closed at load and open as sheets over the text area. The camera uses a wider field of view and nearer positions for the near-square band. A menu gives all six site links. Tests check that the card text is not covered, that the buttons stay in the scene band, and that the column labels are inside the band.
 - Checked in emulation at 360, 390, 412 and 430 px wide and at 1440 px. A physical phone was not tested.
+
+### Second revision, same day: full-screen view and camera tools
+
+- **Expanded view.** One button (or, on a phone, a tap on the scene) gives the scene the whole screen, in portrait or landscape. The key, the controls and company selection stay available. Escape or Close returns to the story.
+- **Camera.** Drag rotates in every chapter (before, only in some). Zoom in, zoom out and reset buttons are on every 3D view. Pinch on a trackpad or Ctrl + wheel zooms; a plain wheel still scrolls the page. In the expanded view the wheel or a pinch zooms, and right-drag or two fingers pans.
+- **Touch screens.** In the story, a drag scrolls the page, so the camera moves only in the expanded view. This is deliberate.
+- Tests cover drag rotation, zoom, reset and the expanded view on both profiles. Touch gestures (pinch, two-finger pan) are provided by the three.js orbit controls and were not exercised by an automated test or on a physical phone.

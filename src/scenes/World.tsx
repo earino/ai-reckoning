@@ -17,7 +17,7 @@ export interface EdgeFilter { types: Set<string>; statuses: Set<string> }
 export interface WorldProps {
   entities: Entity[]; edges: GEdge[]; view: ViewKey; opts: LayoutOpts; camera: CameraPreset; interactive: boolean;
   selectedId: string | null; onSelect: (id: string | null) => void; labels: string[]; focus: string[] | null;
-  colorMode: "role" | "return"; edgeFilter: EdgeFilter; roleFilter: Set<Role>; reducedMotion: boolean; mobile: boolean; paused: boolean; quiet?: boolean;
+  colorMode: "role" | "return"; edgeFilter: EdgeFilter; roleFilter: Set<Role>; reducedMotion: boolean; mobile: boolean; paused: boolean; quiet?: boolean; expanded?: boolean; rig?: React.MutableRefObject<RigApi | null>;
   marketReturn: number | null; fit: { intercept: number; slope: number } | null; dateLabel: string;
 }
 
@@ -36,11 +36,14 @@ function geometryFor(role: Role): THREE.BufferGeometry {
   }
 }
 
-function Rig({ preset, interactive, reducedMotion, mobile }: { preset: CameraPreset; interactive: boolean; reducedMotion: boolean; mobile: boolean }) {
-  const { camera, size } = useThree();
-  // Wide screens: shift the picture right, clear of the text column. Narrow screens: the scene has its own band,
-  // so there is no shift; the field of view widens to keep the same horizontal coverage in a near-square band.
-  const wantShift = (): [number, number] => (mobile ? [0, 0] : preset.shift ?? [0.09, 0]);
+export interface RigApi { zoom: (factor: number) => void; reset: () => void }
+const TAN21 = Math.tan((21 * Math.PI) / 180), TAN33 = Math.tan((33 * Math.PI) / 180);
+
+function Rig({ preset, interactive, reducedMotion, mobile, expanded, api }: { preset: CameraPreset; interactive: boolean; reducedMotion: boolean; mobile: boolean; expanded: boolean; api?: React.MutableRefObject<RigApi | null> }) {
+  const { camera, size, gl } = useThree();
+  // Wide screens with the story text: shift the picture right, clear of the text column. Narrow screens and the
+  // expanded view have no text over the scene, so there is no shift.
+  const wantShift = (): [number, number] => (mobile || expanded ? [0, 0] : preset.shift ?? [0.09, 0]);
   const shift = useRef<[number, number]>(wantShift());
   const applyShift = () => {
     const c = camera as THREE.PerspectiveCamera; const [sx, sy] = shift.current;
@@ -50,17 +53,37 @@ function Rig({ preset, interactive, reducedMotion, mobile }: { preset: CameraPre
   const controls = useRef<any>(null);
   const goal = useRef({ pos: new THREE.Vector3(...preset.position), tgt: new THREE.Vector3(...preset.target), moving: true });
   const tgt = useRef(new THREE.Vector3(...preset.target));
+  const back = useRef(1); // extra camera distance for tall, narrow screens
+  const setGoal = () => {
+    const g = goal.current; g.tgt.set(...preset.target);
+    g.pos.set(...preset.position).sub(g.tgt).multiplyScalar(back.current).add(g.tgt); g.moving = true;
+  };
   useEffect(() => {
-    const c = camera as THREE.PerspectiveCamera;
-    const t = mobile ? Math.min(Math.tan((33 * Math.PI) / 180), Math.max(Math.tan((21 * Math.PI) / 180), 0.68 / (size.width / size.height))) : Math.tan((21 * Math.PI) / 180);
+    // Keep the same horizontal coverage on every screen shape: widen the field of view first, then move the camera back.
+    const c = camera as THREE.PerspectiveCamera; const aspect = size.width / size.height;
+    const need = (mobile ? 0.68 : TAN21 * 1.6) / aspect;
+    const t = mobile || expanded ? Math.min(TAN33, Math.max(TAN21, need)) : TAN21;
     c.fov = (2 * Math.atan(t) * 180) / Math.PI;
-    if (mobile) shift.current = [0, 0];
-    applyShift(); goal.current.moving = true;
+    back.current = mobile || expanded ? Math.max(1, need / t) : 1;
+    if (mobile || expanded) shift.current = [0, 0];
+    applyShift(); setGoal();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [camera, size, mobile]);
-  useEffect(() => {
-    goal.current.pos.set(...preset.position); goal.current.tgt.set(...preset.target); goal.current.moving = true;
-  }, [preset]);
+  }, [camera, size, mobile, expanded]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(setGoal, [preset]);
+  const zoom = (f: number) => {
+    const g = goal.current; g.moving = false;
+    const c = controls.current?.target ?? tgt.current;
+    const d = camera.position.clone().sub(c); const len = Math.min(110, Math.max(3.5, d.length() * f));
+    camera.position.copy(c).add(d.setLength(len)); controls.current?.update();
+  };
+  useEffect(() => { if (api) api.current = { zoom, reset: () => { goal.current.moving = true; } }; });
+  useEffect(() => { // pinch on a trackpad, or Ctrl + wheel: zoom. A plain wheel always scrolls the page.
+    if (expanded) return; const el = gl.domElement;
+    const h = (e: WheelEvent) => { if (!e.ctrlKey && !e.metaKey) return; e.preventDefault(); zoom(Math.exp(e.deltaY * 0.01)); };
+    el.addEventListener("wheel", h, { passive: false }); return () => el.removeEventListener("wheel", h);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gl, expanded]);
   useFrame((_, dt) => {
     const g = goal.current;
     if (!g.moving) return;
@@ -74,7 +97,9 @@ function Rig({ preset, interactive, reducedMotion, mobile }: { preset: CameraPre
     if (camera.position.distanceTo(g.pos) < 0.02) g.moving = false;
   });
   if (!interactive) return null;
-  return <OrbitControls ref={controls} enableZoom={false} enablePan={false} rotateSpeed={0.5} onStart={() => { goal.current.moving = false; }} makeDefault />;
+  // drag: rotate. Expanded view: wheel or pinch zooms, right-drag or two fingers pans.
+  return <OrbitControls ref={controls} enableZoom={expanded} enablePan={expanded} rotateSpeed={0.6} zoomSpeed={0.8} minDistance={3.5} maxDistance={110}
+    onStart={() => { goal.current.moving = false; if (controls.current) tgt.current.copy(controls.current.target); }} makeDefault />;
 }
 
 interface Shared { cur: Float32Array; alpha: Float32Array; placements: Placement[] }
@@ -282,10 +307,10 @@ export default function World(props: WorldProps) {
     <div className="world">
       <Canvas dpr={[1, mobile ? 1.5 : 2]} camera={{ position: CAMERA.field.position, fov: 42, near: 0.1, far: 200 }} frameloop={props.paused ? "never" : "always"}
         gl={{ antialias: true, powerPreference: "high-performance" }} onPointerMissed={() => props.onSelect(null)}
-        aria-hidden="true" style={{ touchAction: props.interactive && !mobile ? "none" : "pan-y" }}>
+        aria-hidden="true" style={{ touchAction: props.interactive ? "none" : "pan-y" }}>
         <color attach="background" args={["#0b0c0e"]} />
         <ambientLight intensity={0.9} /><directionalLight position={[6, 12, 8]} intensity={1.6} /><directionalLight position={[-8, -4, -6]} intensity={0.35} />
-        <Rig preset={props.camera} interactive={props.interactive} reducedMotion={props.reducedMotion} mobile={mobile} />
+        <Rig preset={props.camera} interactive={props.interactive} reducedMotion={props.reducedMotion} mobile={mobile} expanded={!!props.expanded} api={props.rig} />
         {guides.lines.map((l, i) => <Line key={`${view}-${i}`} points={l.points} color={l.color} lineWidth={l.width ?? 1} dashed={!!l.dash} dashSize={l.dash?.[0]} gapSize={l.dash?.[1]} transparent opacity={l.opacity ?? 1} />)}
         {guides.plane && <mesh position={guides.plane.position} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={guides.plane.size} /><meshBasicMaterial color="#ece7dc" transparent opacity={0.035} side={THREE.DoubleSide} depthWrite={false} /></mesh>}
         <Marks {...props} shared={shared} onHover={setHover} />
